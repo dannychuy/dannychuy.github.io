@@ -29,7 +29,7 @@ $(document).ready(function() {
 
           setTimeout(function(){
             Typed.new('#first-about', {
-            strings: ["WeebMaster", "Friendaa", "Molten Lava"],
+            strings: ["antidisestablishmentarianism", "floccinaucinihilipilification", "pneumonoultramicroscopicsilicovolcanoconiosis", "bae."],
             typeSpeed: 10
             });
           }, 900); 
