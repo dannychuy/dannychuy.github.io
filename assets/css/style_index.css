@@ -83,16 +83,18 @@ a {
 }
 
 #first-header {
-	display: inline-block;
 	font-size: 60px;
 	top: 0px;
 	width: 100%;
 }
 
 #first-about {
-	display: inline-block;
 	bottom: 0px;
 	width: 100%;
+}
+
+#first-description {
+	display: inline-block;
 }
 
 #second-section {
