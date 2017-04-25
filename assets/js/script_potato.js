@@ -1,3 +1,5 @@
 $(document).ready(function() {
-  $("#foreground").fadeIn("slow");
+  $("img").click(function(){
+    $("#foreground").fadeIn();
+});
 });
