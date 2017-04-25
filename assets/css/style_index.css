@@ -77,6 +77,23 @@ a {
 	width: 100%;
 }
 
+#first-text {
+	left: 25%;
+	width: 400px;
+	height: 200px;
+}
+
+#first-header {
+	font-size: 60px;
+	top: 0px;
+	width: 100%;
+}
+
+#first-about {
+	bottom: 0px;
+	width: 100%;
+}
+
 #second-section {
 	background-color: rgb(255, 181, 17); 
 }
@@ -245,4 +262,27 @@ body, html {
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
 	-o-transform: translateX(0px);
+}
+
+/*Cursor Blinking*/
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 1.4s infinite;
+    -moz-animation: blink 1.4s infinite;
+    animation: blink 1.4s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
