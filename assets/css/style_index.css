@@ -161,36 +161,6 @@ body, html {
 	bottom: -10px;
 }
 
-/* FREEBIES */
-
-/* Styling the Sidebar Button */
-#sidebar-button {
-	position: fixed;
-	z-index: 100;
-	left: 15px;
-	top: 15px;
-	cursor: pointer;
-	-webkit-transition: all .3s;
-	-moz-transition: all .3s;
-	-o-transition: all .3s;
-	transition: all .3s;
-} 
-
-/* Overriding default styles on the ul */
-.sidebar-container ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	margin-top: 10px;
-}
-
-.page-wrapper {
-	height: 100%;
-	width: 100%;
-	-webkit-transition: all .3s;
-	-moz-transition: all .3s;
-	transition: all .3s;
-}
 
 /* Styling for the carousel previous button */
 #carousel-prev {
@@ -244,24 +214,6 @@ body, html {
 	text-transform: uppercase;
 	margin-top: 10px;
 	text-align: center;
-}
-
-/* jQuery Manipulation Classes */
-
-.no-scroll {
-	overflow: hidden;
-}
-
-.wrapper-active, .button-active {
-	-webkit-transform: translateX(280px);
-	-moz-transform: translateX(280px);
-	transform: translateX(280px);
-}
-
-.sidebar-active {
-	-webkit-transform: translateX(0px);
-	-moz-transform: translateX(0px);
-	-o-transform: translateX(0px);
 }
 
 /*Cursor Blinking*/
