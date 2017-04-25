@@ -1,0 +1,83 @@
+/* You may use the following selectors, but it's not required. */
+
+body {
+	font-family: Yanone Kaffeesatz;
+	text-align: center;
+	margin: 0px;
+	background-color: rgb(255, 181, 17); 
+}
+
+/*Sideground */
+#sideground {
+	position: fixed;
+	z-index: 0;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 30%;
+}
+
+#sideground img {
+	height: 100%;
+	right: 0px;
+}
+
+#container {
+	left: 0px;
+	width: 35%;
+	margin: 0px auto;
+	margin-top: 15px; 
+	padding: 10px 0px;
+	border-radius: 40px; 
+	background-color: rgb(255, 255, 255);
+}
+
+#head {
+	margin: 0px auto;
+	padding: 16px 0px;
+}
+
+#header {
+	font-size: 60px;
+	font-weight: 30px;
+}
+
+#subheader {
+	font-style: italic;
+}
+
+#description {
+	width: 80%;
+	margin: 20px auto;
+	line-height: 1.5;
+}
+
+a {
+
+}
+
+.list-container {
+	/*background-color: rgb(18, 149, 216);*/
+	background-color: #f5f5f5;
+	padding: 5px 32px;
+	margin: 15px auto;
+	width: 75%;
+}
+
+.list-title {
+	padding: 10px 32px;
+	margin: 0px auto;
+	font-size: 30px;
+}
+
+.list-content {
+	padding: 10px 32px;
+	margin: 0px auto;
+}
+
+.list-item {
+	/*background-color: rgb(52, 204, 255);*/
+	background-color: white;
+	padding: 10px 32px;
+	margin: 5px auto;
+}

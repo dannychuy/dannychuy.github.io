@@ -1,0 +1,65 @@
+
+
+body {
+	font-family: Yanone Kaffeesatz;
+	text-align: center;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/*Background */
+#background {
+	position: fixed;
+	z-index: 0;
+	height: 100%;
+	width: 100%;
+}
+
+#background img {
+	width: 100%;
+}
+
+/*Foreground and Quote */
+#foreground {
+	position: absolute;
+	z-index: 1;
+	border-radius: 20px;
+	margin: 0px;
+	width: 600px;
+	background-color: rgba(255,255,255,.8);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.foregroundparts{
+	margin: 30px;
+}
+
+#header {
+	font-size: 40px;
+	font-weight: 700;
+}
+
+/*Emphasize you potaytoey*/
+.bold {
+	display: inline-block;
+	animation: emphasize 0.5s both;
+	animation-delay: 0.5s;
+	color: black;
+	font-weight: 400;
+	text-shadow: 0px 0px 0px white;
+}
+
+@keyframes emphasize {
+	from {
+		text-shadow: 0px 0px 0px white;
+	}
+	to {
+		text-shadow: 0px 3px 4px rgba(0, 0, 255, 0.3);
+	}
+}

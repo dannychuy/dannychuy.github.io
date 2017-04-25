@@ -1,0 +1,93 @@
+/*Sidebar*/
+#nav-toggle { 
+	position: absolute; 
+	left: 50%; top: 50%; 
+}
+
+#nav-toggle {
+	padding: 10px 30px 15px 0px; 
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	height: 3px;
+	width: 30px;
+	background: #fff;
+	position: absolute;
+	display: block;
+	content: '';
+}
+
+#nav-toggle span:before {
+	top: -10px; 
+}
+
+#nav-toggle span:after {
+	bottom: -10px;
+}
+
+/* Styling the Sidebar Button */
+#sidebar-button {
+	position: fixed;
+	z-index: 100;
+	left: 15px;
+	top: 15px;
+	cursor: pointer;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+} 
+
+#sidebar-container {
+	position: fixed;
+	height: 100%;
+	width: 280px;
+	-webkit-transform: translateX(-280px);
+	-moz-transform: translateX(-280px);
+	-o-transform: translateX(-280px);
+	-webkit-transition: all 0.3s;
+}
+
+/* Overriding default styles on the ul */
+#sidebar-container ul { 
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-top: 10px;
+}
+
+.sidebar-item {
+	font-weight: 700px;
+	font-size: 16px;
+	color: white;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*Page*/
+.page-wrapper {
+	height: 100%;
+	width: 100%;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+
+/*Activate Sidebar*/
+.wrapper-active, .button-active {
+	-webkit-transform: translateX(280px);
+	-moz-transform: translateX(280px);
+	transform: translateX(280px);
+}
+
+.sidebar-active {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-o-transform: translateX(0px);
+}
+
+.foreground-active {
+	transform: translate(-50%, 0%);
+}
