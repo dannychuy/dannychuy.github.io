@@ -9,6 +9,22 @@
     <script src="assets/js/typed.js"></script>
     <script src="assets/js/script_index.js"></script>
     <script src="assets/js/script_sidebar.js"></script> 
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+          Typed.new('#first-header', {
+          strings: ["Danny Chuy"],
+          typeSpeed: 10
+          });
+          $("span").remove(".typed-cursor");
+
+          setTimeout(function(){
+            Typed.new('#first-about', {
+            strings: ["antidisestablishmentarianism", "floccinaucinihilipilification", "pneumonoultramicroscopicsilicovolcanoconiosis", "bae."],
+            typeSpeed: 10
+            });
+          }, 900); 
+      });
+    </script>
 </head>
 <body>
 	<div id="sidebar-button">

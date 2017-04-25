@@ -19,20 +19,5 @@ $(document).ready(function() {
       $('#carousel').css('margin-left', (shift + 1) * 960 + "px"); 
     }; 
   });
-
-  document.addEventListener('DOMContentLoaded', function(){
-          Typed.new('#first-header', {
-          strings: ["Danny Chuy"],
-          typeSpeed: 10
-          });
-          $("span").remove(".typed-cursor");
-
-          setTimeout(function(){
-            Typed.new('#first-about', {
-            strings: ["antidisestablishmentarianism", "floccinaucinihilipilification", "pneumonoultramicroscopicsilicovolcanoconiosis", "bae."],
-            typeSpeed: 10
-            });
-          }, 900); 
-      });
 });
 
