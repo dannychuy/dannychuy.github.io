@@ -1,5 +1,4 @@
 body {
-	font-family: Yanone Kaffeesatz;
 	text-align: center;
 	margin: 0px;
 }
@@ -45,6 +44,7 @@ body {
 } 
 
 .sidebar-container {
+	font-family: Yanone Kaffeesatz;
 	z-index: 1;
 	top: 0px;
 	background-color: black;
@@ -76,6 +76,7 @@ body {
 }
 
 .sidebar-item a {
+	text-decoration: none;
 	color: white;
 }
 
