@@ -21,7 +21,11 @@ $(document).ready(function() {
   });
 
   $('#third-section').click(function () {
-    $('#third-text').fadeOut();
+    if ($('#third-text').css('display') == 'none') {
+      $('#third-text').fadeIn();
+    } else {
+      $('#third-text').fadeOut();
+    }
   });
 });
 
