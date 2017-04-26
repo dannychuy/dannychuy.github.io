@@ -63,7 +63,7 @@ a {
 /* Other Sections*/
 .section {
 	width: 100%;
-	height: 600px;
+	height: 620px;
 	position: relative;
 }
 
@@ -90,7 +90,7 @@ a {
 
 #first-about {
 	bottom: 0px;
-	width: 100%;
+	width: 900px;
 }
 
 #first-description {
@@ -222,9 +222,10 @@ body, html {
 /*Cursor Blinking*/
 .typed-cursor{
     opacity: 1;
-    -webkit-animation: blink 1.4s infinite;
-    -moz-animation: blink 1.4s infinite;
-    animation: blink 1.4s infinite;
+    font-size: 45px;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
 }
 @keyframes blink{
     0% { opacity:1; }
