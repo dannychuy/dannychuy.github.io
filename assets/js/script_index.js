@@ -23,7 +23,7 @@ $(document).ready(function() {
   $('#third-section').click(function () {
     if ($('#third-text').css('display') == 'none') {
       $('#third-text').css('font-size', '60px');
-      $('#third-text').text('PSYCHE');
+      $('#third-text').text('SIKE');
       $('#third-text').fadeIn();
       setTimeout(function() { 
       $('#third-text').text('JK'); 
