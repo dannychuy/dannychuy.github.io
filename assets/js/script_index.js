@@ -19,5 +19,9 @@ $(document).ready(function() {
       $('#carousel').css('margin-left', (shift + 1) * 960 + "px"); 
     }; 
   });
+
+  $('#third-section').click(function () {
+    $('#third-text').fadeOut();
+  });
 });
 
