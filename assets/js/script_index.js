@@ -22,7 +22,17 @@ $(document).ready(function() {
 
   $('#third-section').click(function () {
     if ($('#third-text').css('display') == 'none') {
+      $('#third-text').css('font-size', '60px');
+      $('#third-text').text('PSYCHE');
       $('#third-text').fadeIn();
+      setTimeout(function() { 
+      $('#third-text').text('JK'); 
+      $('#third-text').css('font-size', '20px');
+      }, 700);
+      setTimeout(function() { 
+      $('#third-text').text('I\'m small again :('); 
+      $('#third-text').css('font-size', '20px');
+      }, 1000);
     } else {
       $('#third-text').fadeOut();
     }
