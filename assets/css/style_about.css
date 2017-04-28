@@ -98,8 +98,28 @@ a {
 }
 
 .list-item {
+	position: relative;
 	/*background-color: rgb(52, 204, 255);*/
 	background-color: white;
 	padding: 10px 32px;
 	margin: 5px auto;
+	height: 20px;
+	overflow: hidden;
+}
+
+.list-item img {
+	position: absolute;
+	transform: translate(-50%, -20%);
+	margin-left: 0px;
+	/*visibility: hidden;*/
+	height: 100%;
+    transition: all 0.3s;
+}
+
+.l-text {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
 }

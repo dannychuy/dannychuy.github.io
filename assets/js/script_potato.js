@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("img").click(function(){
-    $("#foreground").fadeIn();
-});
+	$("img").click(function(){
+    	$("#foreground").fadeIn();
+	});
 });
