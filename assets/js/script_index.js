@@ -21,21 +21,24 @@ $(document).ready(function() {
   });
 
   $('#third-section').click(function () {
-    if ($('#third-text').css('display') == 'none') {
-      $('#third-text').css('font-size', '60px');
-      $('#third-text').text('SIKE');
-      $('#third-text').fadeIn();
-      setTimeout(function() { 
-      $('#third-text').text('JK'); 
-      $('#third-text').css('font-size', '20px');
-      }, 700);
-      setTimeout(function() { 
-      $('#third-text').text('I\'m small again :('); 
-      $('#third-text').css('font-size', '20px');
-      }, 1000);
-    } else {
-      $('#third-text').fadeOut();
-    }
+    $('#third-text').fadeOut();
+    setTimeout(function() { 
+    $('#third-text').css('font-size', '100px');
+    $('#third-text').text('SIKE');
+    $('#third-text').fadeIn();
+    }, 700);
+    setTimeout(function() { 
+    $('#third-text').text('I\'M BIG'); 
+    $('#third-text').css('font-size', '100px');
+    }, 1400);
+    setTimeout(function() { 
+    $('#third-text').text('JK'); 
+    $('#third-text').css('font-size', '20px');
+    }, 2800);
+    setTimeout(function() { 
+    $('#third-text').text('I am small :('); 
+    $('#third-text').css('font-size', '20px');
+    }, 3500);  
   });
 });
 
