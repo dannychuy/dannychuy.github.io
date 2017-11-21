@@ -30,12 +30,12 @@ $(document).ready(function() {
   });
 
   //Hiding of the sidebar when the user clicks on the page wrapper
-    $( ".page-wrapper, .page" ).click(function() {
+  $( ".page-wrapper, .page" ).click(function() {
     if ($('.sidebar-container').hasClass('sidebar-active')) {
       $( "#sidebar-button" ).removeClass( "button-active" );
       $( ".sidebar-container" ).removeClass( "sidebar-active" );
       $( "#foreground" ).removeClass( "foreground-active" );
       $( ".page-wrapper" ).removeClass( "wrapper-active" );
-      }
-    });
+    }
+  });
 });

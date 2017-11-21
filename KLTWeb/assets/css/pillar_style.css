@@ -32,11 +32,11 @@ body {
 }
 
 .category:hover > .word {
-	transition: 1s;
+	/*transition: 1s;*/
 	/*transition-delay: 1s;*/
-	visibility: visible;
-	top: 10%;
-	transform: translate(0%, 30%);
+	display: inline-block;
+	/*top: 10%;
+	transform: translate(0%, 30%);*/
 }
 
 .category img {
@@ -55,14 +55,14 @@ body {
 	transform: translate(-50%, -50%);
 }
 
+
 .word {
-	transition: 1s;
-	position: absolute;
-	visibility: hidden;
-	font-size: 50px;
-	color: black;
-	top: -10%;
-	left: 45%;
-	transform: rotate(180deg);
+	/*transition: 1s;*/
+	/*position: absolute;*/
+	display: none;
+	/*font-size: 50px;*/
+	/*top: -10%;*/
+	/*left: 45%;*/
+	/*transform: rotate(180deg);*/
 	color: white;
 }
