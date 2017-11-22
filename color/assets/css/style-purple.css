@@ -1,5 +1,5 @@
 body {
-	background-color: #FFF5E6;
+	background-color: #F2E6FF;
 	font-family: 'Source Code Pro', monospace;
 }
 
@@ -12,28 +12,27 @@ a {
 	position: absolute;
 	border: 1px solid black;
 	height: 400px;
-	width: 600px;
+	width: 800px;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -40%);
+	transform: translate(-50%, -50%);
 }
 
 #me-pic {
 	position: absolute;
 	top: 0;
 	left: 0;
-	transform: translate(-50%, -50%);
 }
 
 #me-pic img {
-	height: 200px;
+	height: 400px;
 	width: auto;
 }
 
 #me-text {
 	position: absolute;
 	height: 360px;
-	width: 560px;
+	width: 760px;
 	background-color: #F3F3F3;
 	padding: 20px;
 }
