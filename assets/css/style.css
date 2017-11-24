@@ -17,7 +17,7 @@ a {
 	left: 50%;
 	transform: translateX(-50%);
 
-	animation: up 0.5s ease-out forwards;
+	animation: up 0.5s ease-out 2.5s 1 forwards;
 }
 
 .folder-page {
@@ -85,9 +85,9 @@ a {
 	z-index: 2;
 }
 
-#little-things:active {
+/*#little-things:active {
 	cursor: -webkit-grabbing;
-}
+}*/
 
 #pic-me {
 	height: 200px;
@@ -120,6 +120,141 @@ a {
 	border-left: 1px solid black;
 }
 
+#smile {
+	position: absolute;
+    transform: rotate(-90deg);
+    height: auto;
+    width: 100%;
+    top: 33%;
+    left: 0%;
+    opacity: 0;
+    animation: disappear 2s linear 0s 1 alternate;
+}
+#partial-circles {
+	position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translateY(-50%);
+    height: 105px;
+    width: 130px;
+    animation: bounce 2s linear 0s 1 alternate;
+}
+#top-partial-circle {
+	position: absolute;
+    top: 0;
+    left: 0;
+    height: 110px;
+    width: 75px;
+    overflow: hidden;
+    border-left: 5px solid black;
+    animation: splitTop 2s linear 0s 1 alternate;
+}
+#top-partial-circle:before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 150px;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    background: #D08707;
+    border: 5px solid black;
+}
+
+#bottom-partial-circle {
+	position: absolute;
+    top: 0;
+    right: 0;
+    height: 110px;
+    width: 75px;
+    overflow: hidden;
+    animation: splitBottom 2s linear 0s 1 alternate;
+}
+#bottom-partial-circle:before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 150px;
+    border-radius: 50%;
+    left: 0;
+    background: #D08707;
+    border: 5px solid black;
+}
+
+/*#top-partial-circle {
+	transform: rotate(90deg);
+	animation: none;
+}
+
+#bottom-partial-circle {
+	right: 50%;
+    top: -73%;
+	right: 40.6%;
+	transform: rotate(90deg);
+	animation: none;
+}*/
+
+@keyframes bounce {
+	0% {
+        transform: translate(-50%, -50%);
+    } 
+    20% {
+        transform: translate(-40%, 50%);
+    }
+    40% {
+        transform: translate(-30%, -50%);
+    } 
+    60% {
+        transform: translate(-20%, 50%);
+    }
+    80% {
+        transform: translate(-10%, -50%);
+    } 
+    100% {
+        transform: translate(0%, -50%);
+    }
+}
+
+@keyframes splitTop {
+	0% {
+        /*left: 50%;*/
+        transform: rotate(90deg);
+    }
+    90% {
+        /*left: 50%;*/
+        transform: rotate(90deg);
+    } 
+    100% {
+        left: 0;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes splitBottom {
+	0% {
+        right: 50%;
+        top: -73%;
+		right: 40.6%;
+		transform: rotate(90deg);
+
+    }
+    90% {
+        right: 50%;
+        top: -73%;
+		right: 40.6%;
+        transform: rotate(90deg);
+    } 
+    100% {
+        right: 0;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes disappear {
+	0% { opacity: 1;}
+    90% { opacity: 1;} 
+    100% { opacity: 0;}
+}
 #report-header {
 	font-size: 3em;
 }

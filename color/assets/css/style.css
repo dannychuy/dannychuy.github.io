@@ -52,6 +52,8 @@ a {
 	animation: sideBounce .5s ease 0s infinite alternate;
 }
 
+
+
 @keyframes sideBounce {
     from {
         transform: translate(50%, 50%);
