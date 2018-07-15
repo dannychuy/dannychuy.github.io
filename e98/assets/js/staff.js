@@ -56,3 +56,50 @@ $(document).ready(function(){
 		text += "<br><br>";
 	$("#coord").html(text);
 });
+
+$(document).ready(function(){
+	var text = "<tr> \
+			        <th width='(100/6)%' style='text-align:right;'>Time</th> \
+			        <th width='(100/6)%'>Monday</th> \
+			        <th width='(100/6)%'>Tuesday</th> \
+			        <th width='(100/6)%'>Wednesday</th> \
+			        <th width='(100/6)%'>Thursday</th> \
+			        <th width='(100/6)%'>Friday</th> \
+				</tr>";
+	var i, j, time, style;
+
+	for (i=0; i<calendar_data.length; i++) {
+		time = calendar_data[i];
+		text += "<tr><td style='text-align:right;'>" + calendar_times[i] + "</td>";
+		for (j=0; j<time.length; j ++) {
+			text += "<td>" + insertInfo(time[j]) +"</td>";
+		}
+		text += "</tr> \n";
+	}
+
+		text += "<br><br>";
+	$("#weekly-calendar tbody").html(text);
+});
+
+function insertInfo(section_num) {
+	if (section_num != 0) {
+		var i, section = sections[section_num - 1];
+		var content = "'" + insertContent(section) + "'";
+
+		// var color = "style='background-color:" + section.colored + ";'";
+		var color = "";
+		return "<button type='button' class='btn btn-secondary' data-container='body' data-toggle='popover' data-trigger='hover'\
+			data-placement='right' title='" + section.location + "' data-content=" + content + " " + color + ">Section " + (section_num) + "</button>";
+	}
+	return "";
+	
+}
+
+function insertContent(section) {
+	// var content = section.time + " " + section.location + "\n";
+	var content = "";
+	for (i=0; i<section.instructors.length; i++) {
+		content += section.instructors[i].namer + "\n";
+	}
+	return content;
+}

@@ -30,6 +30,7 @@ sections = [
 	{
 		time: "Mon 11-12PM",
 		location: "Dwinelle 130",
+		colored: "red",
 		instructors: [
 			{
 				namer: "Bryan Chen", 
@@ -52,6 +53,7 @@ sections = [
 	{
 		time: "Wed 2-3PM",
 		location: "Latimer 105",
+		colored: "orange",
 		instructors: [
 			{
 				namer: "Hitesh Yalamanchili", 
@@ -83,6 +85,7 @@ sections = [
 	{
 		time: "Fri 3-4PM",
 		location: "Dwinelle 106",
+		colored: "yellow",
 		instructors: [
 			{
 				namer: "David Lin", 
@@ -106,6 +109,7 @@ sections = [
 	{
 		time: "Fri 11-12PM",
 		location: "Dwinelle 130",
+		colored: "green",
 		instructors: [
 			{
 				namer: "Lily Shiau", 
@@ -137,6 +141,7 @@ sections = [
 	{
 		time: "Wed 3-4PM",
 		location: "VLSB 2030",
+		colored: "blue",
 		instructors: [
 			{
 				namer: "Ariel Plantz", 
@@ -160,6 +165,7 @@ sections = [
 	{
 		time: "Thu 4-5PM",
 		location: "Dwinelle 228",
+		colored: "purple",
 		instructors: [
 			{
 				namer: "Sarika Madhvapathy", 
@@ -183,6 +189,7 @@ sections = [
 	{
 		time: "Mon 10-11AM",
 		location: "Dwinelle 283",
+		colored: "red",
 		instructors: [
 			{
 				namer: "Chad Wakamiya", 
@@ -206,6 +213,7 @@ sections = [
 	{
 		time: "Tue 4-5PM",
 		location: "Barrows 174",
+		colored: "orange",
 		instructors: [
 			{
 				namer: "Kamala Pillai", 
@@ -229,6 +237,7 @@ sections = [
 	{
 		time: "Wed 5-6PM",
 		location: "Dwinelle 250",
+		colored: "yellow",
 		instructors: [
 			{
 				namer: "Menglong Guo", 
@@ -252,6 +261,7 @@ sections = [
 	{
 		time: "Tue 10-11AM",
 		location: "Dwinelle 228",
+		colored: "green",
 		instructors: [
 			{
 				namer: "Emily Hu", 
@@ -275,6 +285,7 @@ sections = [
 	{
 		time: "Mon 3-4PM",
 		location: "Dwinelle 228",
+		colored: "blue",
 		instructors: [
 			{
 				namer: "Dennis Chiu", 
@@ -296,3 +307,17 @@ sections = [
 	},
 
 ];
+
+
+calendar_data = [
+	[ 7,	10,	0,	0,	0],
+	[ 1,	0,	0,	0,	4],
+	[ 0,	0,	0,	0,	0],
+	[ 0,	0,	0,	0,	0],
+	[ 0,	0,	2,	0,	0],
+	[11,	0,	5,	0,	3],
+	[ 0,	8,	0,	6,	0],
+	[ 0,	0,	9,	0,	0]
+];
+
+calendar_times = ["9:00 AM", "10:00 AM", "11:00 AM", "12:00 PM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM", "5:00 PM"]

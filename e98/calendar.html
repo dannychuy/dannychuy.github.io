@@ -3,112 +3,53 @@
 <head>
 	<title>E98: The Insider's Guide to Berkeley Engineering</title>
 
-    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-
     
+	<script type="text/javascript" src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="./assets/js/staff_data.js"></script>
+	<script type="text/javascript" src="./assets/js/staff.js"></script>
 	<script type="text/javascript" src="./assets/js/script.js"></script>
 </head>
 <body>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbar">
+		<a class="navbar-brand" href="#">Engineering 98</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+			        <a class="nav-link" href="index.html">Home</a>
+			    </li>
+			    <li class="nav-item">
+			    	<a class="nav-link" href="staff.html">Staff</a>
+			    </li>
+			    <li class="nav-item">
+			    	<a class="nav-link" href="calendar.html">Calendar</a>
+			    </li>
+			    <li class="nav-item">
+			    	<a class="nav-link" href="resources.html">Resources</a>
+			    </li>
+			    <li class="nav-item">
+			    	<a class="nav-link" href="contact.html">Contact</a>
+			    </li>
+			</ul>
+		</div>
+	</nav>
 
 
 	<div id="weekly-calendar" class="table-responsive" >
 		<table class="table" cellpadding="5px">
-		  <tbody style="text-align: center;">
-		     <tr>
-		        <th width="(100/6)%">Time</th>
-		        <th width="(100/6)%">Monday</th>
-		        <th width="(100/6)%">Tuesday</th>
-		        <th width="(100/6)%">Wednesday</th>
-		        <th width="(100/6)%">Thursday</th>
-		        <th width="(100/6)%">Friday</th>
-		     </tr>
-		     <tr>
-		        <td>9:00 AM</td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		     </tr>
-		     <tr>
-		        <td>10:00 AM</td>
-		        <td><a href="#" title="Header" data-toggle="popover" data-placement="right" data-content="Content">Click</a></td>
-		        <td><a href="#" title="Header" data-toggle="popover" data-placement="right" data-content="Content">Click</a></td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		     </tr>
-		     <tr>
-		        <td>11:00 AM</td>
-		        <td><a href="#" title="Header" data-toggle="popover" data-placement="right" data-content="Content">Click</a></td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		     </tr>
-		     <tr>
-		        <td>12:00 PM</td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		     </tr>
-		     <tr>
-		        <td>1:00 PM</td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		     </tr>
-		     <tr>
-		        <td>2:00 PM</td>
-		        <td></td>
-		        <td></td>
-		        <td><a href="#" title="Header" data-toggle="popover" data-placement="left" data-content="Content">Click</a></td>
-		        <td></td>
-		        <td></td>
-		     </tr>
-		     <tr>
-		        <td>3:00 PM</td>
-		        <td><a href="#" title="Header" data-toggle="popover" data-placement="right" data-content="Content">Click</a></td>
-		        <td></td>
-		        <td><a href="#" title="Header" data-toggle="popover" data-placement="left" data-content="Content">Left</a></td>
-		        <td></td>
-		        <td><a href="#" title="Header" data-toggle="popover" data-placement="left" data-content="Content">Click</a></td>
-		     </tr>
-		     <tr>
-		        <td>4:00 PM</td>
-		        <td></td>
-		        <td><a href="#" title="Header" data-toggle="popover" data-placement="right" data-content="Content">Click</a></td>
-		        <td></td>
-		        <td><a href="#" title="Header" data-toggle="popover" data-placement="left" data-content="Content">Click</a></td>
-		        <td></td>
-		     </tr>
-		     <tr>
-		        <td>5:00 PM</td>
-		        <td></td>
-		        <td></td>
-		        <td><a href="#" title="Header" data-toggle="popover" data-placement="left" data-content="Content">Click</a></td>
-		        <td></td>
-		        <td></td>
-		     </tr>
-		     <tr>
-		        <td>6:00 PM</td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		     </tr>
-		     
-		  </tbody>
+			<tbody style="text-align: center;">
+				
+			</tbody>
 		</table>
 	</div>
+
 </body>
 </html>

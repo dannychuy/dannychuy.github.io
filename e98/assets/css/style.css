@@ -2,7 +2,11 @@ header {
 	margin: 30px;
 }
 
-body { padding: 70px 130px; }
+/*body { padding: 70px 130px; }*/
+
+th {
+  background-color: #e9ecef;
+}
 
 #calendar tr:hover {
 	background-color: #f8f9fa!important;
@@ -12,15 +16,18 @@ body { padding: 70px 130px; }
 	background-color: #f8f9fa!important;
 }
 
-a {
-	text-decoration: none;
+.page {
+  padding: 70px 130px;
 }
 
+a, a:hover {
+	text-decoration: none;
+  color: black;
+}
 
 .img-circle {
     border-radius: 50%;
 }
-
 
 .staff ul {
   color: #555;
@@ -36,6 +43,10 @@ a {
 	margin: auto;
 }
 
+.staff h2 {
+  padding-left: 15px;
+}
+
 .center-block {
     display: block;
     margin-left: auto;
@@ -44,4 +55,29 @@ a {
 
 .bio {
   font-size: 13px;
+}
+
+#section-highlight {
+  text-align: left;
+}
+
+
+/* Stackoverflow preview fix, please ignore */
+.navbar-nav {
+  flex-direction: row;
+}
+
+.nav-link {
+  padding-right: .5rem !important;
+  padding-left: .5rem !important;
+}
+
+/* Fixes dropdown menus placed on the right side */
+.ml-auto .dropdown-menu {
+  left: auto !important;
+  right: 0px;
+}
+
+.popover {
+    white-space: pre-wrap;    
 }
