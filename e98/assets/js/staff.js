@@ -18,6 +18,7 @@ $(document).ready(function(){
 							        	<ul> \
 								            <li></li> \
 								            <li class='section'>" + instructor.ym + "</li> \
+								            <li class='section bio'><b>Involvement:</b> " + instructor.involvement + " \
 								            <li class='section bio'> <b>About:</b> " + instructor.bio + " \
 							            	</li> \
 							         	</ul> \
@@ -37,14 +38,13 @@ $(document).ready(function(){
 		instructor = coordinators[j];
 		text += "<div class='row'> \
 			     	<div class='col-xs-3 col-sm-12 col-md-3 staffer-img'> \
-			        	<img class='img-responsive img-circle center-block' src='assets/img/" + instructor.img + ".jpg'> \
+			        	<img class='img-responsive img-circle center-block' src='assets/img/" + instructor.img + ".png'> \
 			     	</div> \
 			     	<div class='col-xs-9 col-sm-12 col-md-9'> \
 			        	<h3 style='display: inline-block; padding-right: 1em;''>" + instructor.namer + "</h3> <a href='mailto: " + instructor.email + "'>" + instructor.email + "</a> \
 			        	<ul> \
 				            <li></li> \
 				            <li class='section'>" + instructor.ym + "</li> \
-							<li class='section bio'><b>Involvement:</b> " + instructor.involvement + " \
 				            <li class='section bio'> <b>About:</b> " + instructor.bio + " \
 			            	</li> \
 			         	</ul> \
