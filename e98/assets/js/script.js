@@ -1,7 +1,7 @@
 var windowOffset = 70;
 $(document).ready(function(){
   $('body').scrollspy({target: ".navbar", offset: 50});   
-  $("#navbar a").on('click', function(event) {
+  $("#navbar a, #enroll-btn").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
       $('html, body').animate({

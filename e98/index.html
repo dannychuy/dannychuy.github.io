@@ -18,7 +18,7 @@
 <!-- <body data-spy="scroll" data-target=".navbar" data-offset="50"> -->
 <body>
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbar">
-		<a class="navbar-brand" href="#">Engineering 98</a>
+		<a class="navbar-brand" href="#home">Engineering 98</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -26,7 +26,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-			        <a class="nav-link" href="#jumbotron">Home</a>
+			        <a class="nav-link" href="#home">Home</a>
 			    </li>
 			    <li class="nav-item">
 			    	<a class="nav-link" href="#calendar">Calendar</a>
@@ -57,9 +57,12 @@
 			<p class="lead">Engineering 98 is a student-run seminar (DeCal) designed and taught by Berkeley engineering upperclassmen. The course covers everything an incoming engineering student needs to know in a casual class setting. Our goal is to help every incoming engineer gain the wisdom of an upper-division student while making long-lasting connections with upperclassmen and fellow students.</p>
 			<hr class="my-4">
 			<p>Each section consists of 2 instructors at 20 students - check out our <a href="staff.html" style="text-decoration: none;">staff</a> to see which section is your best fit!</p>
-			<p>Feel free to contact us, the E98 Coordinators, at e98coords@gmail.com.</p>
+			<p>Feel free to contact us, the E98 Coordinators, at <a class="nav-item" href='mailto: e98coords@gmail.com'>e98coords@gmail.com</a>.</p>
 			<p>Instructors: Lucio Tang, Lily Shiau, and Neel Raman</p>
-			<p class="lead"><a class="btn btn-primary btn-lg" href="#" role="button">Sign up now!</a></p>
+			<p class="lead">
+				<a id="enroll-btn" class="btn btn-primary btn-lg" href="#enroll" role="button">How do I enroll?</a>
+				<a class="btn btn-primary btn-lg" href="https://decal.berkeley.edu/courses/4196" target="_blank" role="button">DeCal Website</a>
+			</p>
 		</div>
 
 		<div id="calendar" class="table-responsive">
@@ -75,64 +78,65 @@
 			     <tr>
 			        <td>1</td><td>Introduction</td>
 			        <td><b>Mandatory:</b> Share contact info, schedule hangout and picture</td>
-			        <td>Introductions<td>
+			        <td>Introductions</td>
 			     </tr>
 			     <tr>
 			        <td>2</td><td>Beyond Studying - Extracurricular Activities</td>
 			        <td><em>Highly Suggested:</em> Attend a general meeting of 2 organizations and fill out forms for each</td>
-			        <td>Extracurricular Activities<td>
+			        <td>Extracurricular Activities</td>
 			     </tr>
 			     <tr>
 			        <td>3</td><td>Study Skills</td>
 			        <td><em>Highly Suggested:</em> Attend an office hour, take picture</td>
-			        <td>Study Skills<td>
+			        <td>Study Skills</td>
 			     </tr>
 			     <tr>
 			        <td>4</td><td>Thinking Ahead - Finding Your Future</td>
 			        <td><b>Mandatory:</b> Find and print job description for next week
 			        	<br>
 			        	<em>Highly Suggested:</em> Attend an infosession</td>
-			        <td>Thinking Ahead - Finding Your Future<td>
+			        <td>Thinking Ahead - Finding Your Future</td>
 			     </tr>
 			     <tr>
 			        <td>5</td><td>Resumes and Career Fairs</td>
 			        <td><b>Mandatory:</b> Write/revise resume and bring 2 copies to class next week. Also, bring job description next week.
 			        	<br>
 			        	<em>Highly Suggested:</em> Attend the Early Bird Career Fair on Oct 11th</td>
-			        <td>Resumes and Career Fairs<td>
+			        <td>Resumes and Career Fairs</td>
 			     </tr>
 			     <tr>
 			        <td>6</td><td>Cover Letters and Etiquette</td>
 			        <td><b>Mandatory:</b> Write a cover letter and bring 2 copies, bring job description and resume
 			        	<br>
 			        	<em>Highly Suggested:</em> Create a LinkedIn profile and connect with instructors and classmates</td>
-			        <td>Cover Letters and Etiquette<td>
+			        <td>Cover Letters and Etiquette</td>
 			     </tr>
 			     <tr>
 			        <td>7</td><td>Mock Career Fair and Interviews</td>
 			        <td><em>Highly Suggested:</em> Practice answering interview questions</td>
-			        <td>Mock Career Fair and Interviews<td>
+			        <td>Mock Career Fair and Interviews</td>
 			     </tr>
 			     <tr>
 			        <td>8</td><td>Making the Most of Your Time: Class Registration</td>
 			        <td><em>Highly Suggested:</em> Make a four-year plan for your coursework.</td>
-			        <td>Class Registration<td>
+			        <td>Class Registration</td>
 			     </tr>
 			     <tr>
 			        <td>9</td><td>Communication Skills, Part I: Peer-reviewed literature and how to read it</td>
 			        <td><b>Mandatory:</b> Choose a scientific literature article that you will base your talk on, and prepare a talk about it</td>
-			        <td>Types of Scientific Literature and Their Credibility<td>
+			        <td>Types of Scientific Literature and Their Credibility</td>
 			     </tr>
 			     <tr>
 			        <td>10</td><td>Communication Skills, Part II: Technical Presentations</td>
 			        <td><em>Highly Suggested:</em> Do some research to find out more about a presentation that interested you</td>
-			        <td>Technical Topic Answers<td>
+			        <td>Technical Topic Answers</td>
 			     </tr>
 			     <tr>
 			        <td>11</td><td>Must-Dos and SYPFTTY</td>
 			        <td><em>Highly Suggested:</em> look into topics suggested in class</td>
-			        <td>Must-Dos and SYPFTTY<td>
+			        <td>Must-Dos and SYPFTTY</td>
 			     </tr>
+			 </td>
 			     
 			  </tbody>
 			</table>
@@ -159,14 +163,34 @@
 		<div id="instr" class="staff"></div>
 
 
-		<div id="resources">There are zero resources for this class, goodluck!</div>
+		<div id="resources">
+			<h2>Resources</h2>
+			<div id="enroll" style="padding: 5px;">
+				<h4>Enrollment Procedures:</h4>
+				<div>Each section is capped at <em>20</em> seats and based on <em>first-come, first-serve</em> basis. Students who register in full sections will be placed on a waitlist.</div>
+				<div>Enroll in Engineering 98 like you would with any other class - on <a href="https://calcentral.berkeley.edu/academics" target="_blank" style="text-decoration: underline; color: darkblue;">CalCentral</a>! On CalCentral's My Academics tab, <br>
+					- Under "4. Class Enrollment", click on "Choose classes". <br>
+					- You will be directed to a new page. Click "Search". <br>
+					- Set Subject as "Engineering" and Course Number as "is exactly" and "98". <br>
+					- Click on "Search" and choose from Sections 003 to 012 or 014! (Note: do NOT enroll in Section 001 or 002.)
+				</div>
+			</div>
+		</div>
 		<div id="contact">There are zero resources for this class, goodluck!</div>
+		<br>
+		
+		<div>We are a student group acting independently of the University of California. We take full responsibility for our organization and this web site.</div>
 
 	</div>
 
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-	   <div class="navbar-brand" href="#">Contact Us @</div>
-	   <a class="nav-item" href='mailto: e98coords@gmail.com' style='color: white;'> email: e98coords@gmail.com</a>
+		<div class="navbar-brand" href="#">Contact Us @</div>
+		<a class="nav-item" href='mailto: e98coords@gmail.com' style='color: white;'> email: e98coords@gmail.com</a>
+		<a class="nav-item ml-auto" href="https://www.ocf.berkeley.edu">
+	   		<img src="https://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin-dark.svg" alt="Hosted by the OCF" style="border: 0;" />
+		</a>
+
+
 	</nav>
 
 	

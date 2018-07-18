@@ -5,7 +5,7 @@ $(document).ready(function(){
 	for (i=0; i<sections.length; i++) {
 		section = sections[i];
 		text += "<div id='sec1'> \
-					<h2>Section " + (i+1) + ": " + section.time + ",	" + section.location + "</h2> \
+					<h4>Section " + (i+1) + ": " + section.time + ",	" + section.location + "</h4> \
 					<br>";
 					for (j=0; j<section.instructors.length; j++) {
 						instructor = section.instructors[j];
@@ -14,7 +14,7 @@ $(document).ready(function(){
 							        	<img class='img-responsive img-circle center-block' src='assets/img/" + instructor.img + ".png'> \
 							     	</div> \
 							     	<div class='col-xs-9 col-sm-12 col-md-9'> \
-							        	<h3 style='display: inline-block; padding-right: 1em;''>" + instructor.namer + "</h3> <a href='mailto: " + instructor.email + "'>" + instructor.email + "</a> \
+							        	<h4 style='display: inline-block; padding-right: 1em;''>" + instructor.namer + "</h4> <a href='mailto: " + instructor.email + "'>" + instructor.email + "</a> \
 							        	<ul> \
 								            <li></li> \
 								            <li class='section'>" + instructor.ym + "</li> \
@@ -41,7 +41,7 @@ $(document).ready(function(){
 			        	<img class='img-responsive img-circle center-block' src='assets/img/" + instructor.img + ".png'> \
 			     	</div> \
 			     	<div class='col-xs-9 col-sm-12 col-md-9'> \
-			        	<h3 style='display: inline-block; padding-right: 1em;''>" + instructor.namer + "</h3> <a href='mailto: " + instructor.email + "'>" + instructor.email + "</a> \
+			        	<h4 style='display: inline-block; padding-right: 1em;''>" + instructor.namer + "</h4> <a href='mailto: " + instructor.email + "'>" + instructor.email + "</a> \
 			        	<ul> \
 				            <li></li> \
 				            <li class='section'>" + instructor.ym + "</li> \
