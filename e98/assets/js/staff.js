@@ -18,7 +18,6 @@ $(document).ready(function(){
 							        	<ul> \
 								            <li></li> \
 								            <li class='section'>" + instructor.ym + "</li> \
-								            <li class='section bio'><b>Involvement:</b> " + instructor.involvement + " \
 								            <li class='section bio'> <b>About:</b> " + instructor.bio + " \
 							            	</li> \
 							         	</ul> \
@@ -45,6 +44,7 @@ $(document).ready(function(){
 			        	<ul> \
 				            <li></li> \
 				            <li class='section'>" + instructor.ym + "</li> \
+							<li class='section bio'><b>Involvement:</b> " + instructor.involvement + " \
 				            <li class='section bio'> <b>About:</b> " + instructor.bio + " \
 			            	</li> \
 			         	</ul> \
