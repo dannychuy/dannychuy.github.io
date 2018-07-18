@@ -4,7 +4,6 @@ coordinators = [
 				img: "neel",
 				email: "some_email@berkeley.edu",
 				ym: "Mechanical Engineering, Class of 2020",
-				involvement: "",
 				bio: ""
 			},
 			{
@@ -12,15 +11,13 @@ coordinators = [
 				img: "neel",
 				email: "neelraman@berkeley.edu", 
 				ym: "Mechanical Engineering, Class of 2019",
-				involvement: "President of Tau Beta Pi (Engineering Honor Society), Engineering Student Council, American Institute of Chemical Engineers, Undergraduate Research, Chemical Engineering Car team, IM basketball at one point",
-				bio: "Yo what's up everyone, I'm a junior ChemE major/EECS minor from Round Rock, Texas and have also lived in New Jersey, Louisiana, and the Bay Area before coming to Berkeley. I like listening to music, watching/playing basketball, and binge-watching good TV shows so hit me up if you have any recommendations! I'm also really interested in semiconductors and have been doing research in that field for a while (including interning at Lam Research last summer). I look forward to meeting you all!"
+				bio: " Hi everyone, I'm a senior ChemE major/EECS minor from Round Rock, Texas. I like listening to music, watching/playing basketball, and binge-watching good TV shows so hit me up if you have any recommendations!"
 			},
 			{
 				namer: "Lily Shiau", 
 				img: "neel",
 				email: "lome_email@berkeley.edu", 
 				ym: "Mechanical Engineering, Class of 2019",
-				involvement: "I love e98!",
 				bio: "something good"
 			},
 		];
