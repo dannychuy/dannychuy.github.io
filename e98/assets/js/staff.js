@@ -4,14 +4,14 @@ $(document).ready(function(){
 
 	for (i=0; i<sections.length; i++) {
 		section = sections[i];
-		text += "<div id='sec1'> \
+		text += "<div id='sect" + (i+1) + "'> \
 					<h4>Section " + (i+1) + ": " + section.time + ",	" + section.location + "</h4> \
 					<br>";
 					for (j=0; j<section.instructors.length; j++) {
 						instructor = section.instructors[j];
 						text += "<div class='row'> \
 							     	<div class='col-xs-3 col-sm-12 col-md-3 staffer-img'> \
-							        	<img class='img-responsive img-circle center-block' src='assets/img/" + instructor.img + ".png'> \
+							        	<img class='img-responsive img-circle center-block' src='assets/img/" + instructor.img + ".jpg'> \
 							     	</div> \
 							     	<div class='col-xs-9 col-sm-12 col-md-9'> \
 							        	<h4 style='display: inline-block; padding-right: 1em;''>" + instructor.namer + "</h4> <a href='mailto: " + instructor.email + "'>" + instructor.email + "</a> \
@@ -20,6 +20,7 @@ $(document).ready(function(){
 								            <li class='section'>" + instructor.ym + "</li> \
 								            <li class='section bio'><b>Involvement:</b> " + instructor.involvement + " \
 								            <li class='section bio'> <b>About:</b> " + instructor.bio + " \
+								            <li class='section bio'> <b>Contact me about:</b> " + instructor.abt + " \
 							            	</li> \
 							         	</ul> \
 							      	</div> \
@@ -38,7 +39,7 @@ $(document).ready(function(){
 		instructor = coordinators[j];
 		text += "<div class='row'> \
 			     	<div class='col-xs-3 col-sm-12 col-md-3 staffer-img'> \
-			        	<img class='img-responsive img-circle center-block' src='assets/img/" + instructor.img + ".png'> \
+			        	<img class='img-responsive img-circle center-block' src='assets/img/" + instructor.img + ".jpg'> \
 			     	</div> \
 			     	<div class='col-xs-9 col-sm-12 col-md-9'> \
 			        	<h4 style='display: inline-block; padding-right: 1em;''>" + instructor.namer + "</h4> <a href='mailto: " + instructor.email + "'>" + instructor.email + "</a> \
@@ -82,13 +83,13 @@ $(document).ready(function(){
 
 function insertInfo(section_num) {
 	if (section_num != 0) {
-		var i, section = sections[section_num - 1];
+		var section = sections[section_num - 1];
 		var content = "'" + insertContent(section) + "'";
 
-		// var color = "style='background-color:" + section.colored + ";'";
-		var color = "";
-		return "<button type='button' class='btn btn-secondary' data-container='body' data-toggle='popover' data-trigger='hover'\
-			data-placement='right' title='" + section.location + "' data-content=" + content + " " + color + ">Section " + (section_num) + "</button>";
+		var color = "style='background-color:" + section.colored + ";'";
+		// var color = "";
+		return "<a href='#sect" + section_num + "' class='sect'><button type='button' class='btn btn-secondary' data-container='body' data-toggle='popover'\
+			data-trigger='hover' data-placement='right' title='" + section.location + "' data-content=" + content + " " + color + ">Section " + (section_num) + "</button></a>";
 	}
 	return "";
 	

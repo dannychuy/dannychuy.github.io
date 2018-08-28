@@ -17,7 +17,7 @@ th {
 }
 
 .page {
-  padding: 70px 130px;
+  padding: 100px 130px;
 }
 
 a, a:hover {
@@ -27,6 +27,8 @@ a, a:hover {
 
 .img-circle {
     border-radius: 50%;
+    height: 150px;
+    width: 150px;
 }
 
 .staff ul {
@@ -80,4 +82,13 @@ a, a:hover {
 
 .popover {
     white-space: pre-wrap;    
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-brand img {
+    height: 60px;
+    margin-right: 20px;
 }
