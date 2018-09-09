@@ -286,7 +286,7 @@ sections = [
 
 	{
 		time: "Tue 10-11AM",
-		location: "Dwinelle 228",
+		location: "Kroeber 115",
 		colored: "OliveDrab",
 		instructors: [
 			{
