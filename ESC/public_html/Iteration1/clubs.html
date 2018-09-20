@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ESC UC Berkeley </title>
+    <meta name="description" content="Engineering Student Council (ESC) at UC Berkeley">
+    <meta name="author" content="Zachary Zeleznick">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Lobster" media="screen" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <script src="pack.js"></script>
+    <script type="text/javascript" src="assets/js/portfolioJs/jquery.main.min.js"></script>
+
+
+
+    <title>test</title>
+</head>
+<style type="text/css">
+.item {
+    min-height: 40px;
+    width: 25%;
+    background-color: red;
+    font-size: 20px;
+    font: 'Raleway';
+}
+.item.w2 {
+    width: 50%;
+    background-color: blue;
+}
+.item.w3 {
+    width: 65%;
+    background-color: green;
+}
+.item.n {
+    width: 100%;
+    max-width: 300px;
+}
+.label {
+    color: white;
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    top: 20px;
+    font-size: 32px;
+}
+.hover {
+    background: rgba(0, 0, 0, .7) no-repeat center;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.card {
+    /*width: 600px;
+    background-color: yellow;*/
+
+    border: blue 4px solid;
+}
+.img-cont {
+    position: relative;
+    display: flex;
+    border: red 2px solid;
+}
+.img-cont:hover .hover {
+    opacity: 1;
+}
+.spec {
+    background: url(assets/img/portfolios/American%20Nuclear%20Society.PNG) no-repeat;
+}
+.bounded {
+    width: 100%;
+    height: 100%;
+}
+.list {
+    line-height: 2;
+    margin: 2px 40px 0px 40px;
+}
+
+
+.list li {
+    font-size: 17px;
+    list-style-type: decimal-leading-zero;
+}
+.list ul {
+    margin: -4px 0px 15px 0px;
+    padding: 10px 0px 10px 50px;
+    background: #FFF;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #DEDEDE;
+    border-bottom-width: 3px;
+}
+
+
+.label a {
+    color: white;
+    text-decoration: none;
+}
+.label a:hover {
+    color: red;
+}
+h3 {
+    font-size: 30px !important;
+    margin: 30px auto 30px auto !important;
+}
+h11 {
+    font-family: "Raleway";
+    font-weight: 300;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 30px;
+    color: #fff;
+}
+.filter-cont {
+    width: 90%;
+    margin: 4px auto 4px auto;
+    position: relative;
+    display: inline-grid;
+    text-align: center;
+}
+.sidebar {
+    width: 149px;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    float: left;
+    border-right: 1px solid #a13d36;
+    margin-right: -1px;
+    -webkit-box-shadow: inset -1px 0 0 #ff786b;
+    -moz-box-shadow: inset -1px 0 0 #ff786b;
+    box-shadow: inset -1px 0 0 #ff786b;
+}
+#filter {
+    display: inline-block;
+    padding: 5px 30px;
+    margin: 20px 2px 20px 2px;
+    text-decoration: none;
+    color: #666;
+    font-size: 18px;
+    cursor: pointer;
+}
+#filter:hover {
+    background: #e95a44;
+    color: #fff;
+}
+@media (min-width: 1100px) {
+    .container {
+        max-width: 1070px;
+    }
+     .filter-cont {
+       width: 80%;
+    }
+}
+@media (max-width: 900px) {
+    .mytab {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+     #filter {
+        padding: 5px 20px;
+        margin: 6px 2px 6px 2px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 600px) {
+    #filter {
+        padding: 5px 10px;
+        margin: 5px 2px 5px 2px;
+        font-size: 12px;
+    }
+}
+</style>
+<!-- Fixed navbar -->
+<div id="navigation" class="navbar navbar-default navbar-fixed-top">
+    <div class="container2">
+        <div class="mytab">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="./index.html"><b>ESC</b></a>
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="./index.html" class="smothscroll">Home</a>
+                    </li>
+
+                    <li><a href="index.html#team" class="smothscroll">Our Team</a>
+                    </li>
+
+                    <li class="dropdown active">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown"> Student Services <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="clubs.html">Clubs</a>
+                            </li>
+                            <li><a href="./finances.html">Finances</a>
+                            </li>
+                            <li><a href="./facilities.html">Facilities</a>
+                            </li>
+                            <li><a href="./finances.html">Administration</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="./iec.html" class="smothScroll">IEC</a>
+                    </li>
+                    
+                    <li><a href="https://www.facebook.com/UC-Berkeleys-Engineers-Week-1529774413936182/?fref=ts" class="smothScroll">Engineers Week</a>
+                    </li>
+                    <li><a href="#contact" class="smothScroll">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+<!--nav-->
+
+
+<!--Header-->
+<section id="home" name="home"></section>
+<div id="headerwrap">
+    <div class="container">
+        <div class="row centered">
+            <div class="col-lg-12">
+                <h10>Engineering Student Council</h10>
+                <br>
+                <br>
+                <h11>Official Website of UC Berkeley's ESC</h11>
+                <br>
+                <br>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <!--/ .container -->
+</div>
+<!--/ #headerwrap -->
+
+
+<body>
+    <div class="filter-cont">
+        <!--div id="filter" onclick="generate2()"> LAZY</div-->
+        <div id="filter" onclick="filter()"> All</div>
+        <div id="filter" onclick="filter('academic')"> Academic and Professional</div>
+        <div id="filter" onclick="filter('entre')"> Entrepreneurship/Consulting</div>
+        <div id="filter" onclick="filter('design')"> Design, Make, Hack</div>
+        <div id="filter" onclick="filter('outreach')"> Outreach</div>
+        <div id="filter" onclick="filter('compete')"> Competition/Project Teams</div>
+        <div id="filter" onclick="filter('frat')"> Fraternities and Sororities</div>
+        <div id="filter" onclick="filter('cult')"> Culture and Identity</div>
+    </div>
+    <!--aside class="sidebar clearfix">
+<div class="filter-cont">
+        <div id="filter" onclick="generate2()"> LAZY</div>
+        <div id="filter" onclick="filter('academic')"> Academic and Professional</div>
+        <div id="filter" onclick="filter('academic')"> Bobb</div>
+        <div id="filter" onclick="filter('academic')"> Bobb</div>
+        <div id="filter" onclick="filter('academic')"> Bob</div>
+    </div>
+</aside-->
+    <div class="list">
+        <div class="col-lg-12 filterable" cat="academic">
+            <h3><strong>Academic and Professional</strong></h3>
+            <ul>
+                <li><a href="http://aiaa.berkeley.edu/" target="_blank">American Institute of Aeronautics and Astronautics (AIAA)</a>
+                </li>
+                <li><a href="http://www.cchem.berkeley.edu/aiche" target="_blank">American Institute of Chemical Engineers (AIChE)</a>
+                </li>
+                <li><a href="http://www.nuc.berkeley.edu/ans/" target="_blank">American Nuclear Society (ANS)</a>
+                </li>
+                <li><a href="http://www.calasce.org/" target="_blank">American Society of Civil Engineers (ASCE)</a>
+                </li>
+                <li><a href="http://asme.berkeley.edu/" target="_blank">American Society of Mechanical Engineers (ASME)</a>
+                </li>
+                <li><a href="https://bmes.berkeley.edu/" target="_blank">Biomedical Engineering Society (BMES)</a>
+                </li>
+                <li><a href="https://ieee.berkeley.edu/" target="_blank">Institute of Electrical and Electronics Engineers (IEEE)</a>
+                </li>
+                <li><a href="http://iie.berkeley.edu/" target="_blank">Institute of Industrial Engineers (IIE)</a>
+                </li>
+                <li><a href="http://ispe.berkeley.edu/" target="_blank">International Society for Pharmaceutical Engineering (ISPE)</a>
+                </li>
+                <li><a href="http://berkeleymsea.com/" target="_blank">Materials Science and Engineering Association</a>
+                </li>
+                <li><a href="http://www.ocf.berkeley.edu/~ses/" target="_blank">Society of Engineering Sciences</a>
+                </li>
+                <li><a href="http://apm.ieor.berkeley.edu/" target="_blank">Alpha Pi Mu</a>
+                </li>
+                <li><a href="https://www.ocf.berkeley.edu/~ch" target="_blank"> Chi Epsilon Civil Engineering Honors Society</a>
+                </li>
+                <li><a href="https://hkn.eecs.berkeley.edu/" target="_blank"> Eta Kappa Nu (HKN)</a>
+                </li>
+                <li><a href="https://msea.berkeley.edu/" target="_blank"> Materials Science and Engineering Association (MSEA)</a>
+                </li>
+                <li><a href="http://pts.berkeley.edu/" target="_blank"> Pi Tau Sigma (PTS)</a>
+                </li>                
+                <li><a href="https://tbp.berkeley.edu/" target="_blank"> Tau Beta Pi (TBP)</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-12 filterable" cat="entre">
+            <h3><strong>Entrepreneurship/Consulting </strong></h3>
+            <ul>
+                <li><a href="http://www.berkeleyanova.org/" target="_blank">ANova</a>
+                </li>
+                <li><a href="_blank" target="_blank">Chemical Engineering Consulting Group (ChEC)</a>
+                </li>             
+                <li><a href="_blank" target="_blank">Engineering Innovation (EngIn)</a>
+                </li>
+                <li><a href="_blank" target="_blank">Engineering Solutions at Berkeley (ES)</a>
+                </li>  
+                <li><a href="_blank" target="_blank">Phoenix Consulting Group (PCG)</a>
+                </li>  
+            </ul>
+        </div>
+        <div class="col-lg-12 filterable" cat="design">
+            <h3><strong>Design, Make, Hack</strong></h3>
+            <ul>
+                <li><a href="https://callink.berkeley.edu/organization/3dmc" target="_blank">3DMC: 3D Modeling Club</a>
+                </li>
+                <li><a href="http://www.ocf.berkeley.edu/~binnov/" target="_blank">Berkeley Innovation</a>
+                </li>
+                <li><a href="http://dec.berkeley.edu/" target="_blank">Design Engineering Collaborative</a>
+                </li>
+                <li><a href="http://eswberkeley.weebly.com" target="_blank">Engineers for a Sustainable World</a>
+                </li>
+                <li><a href="http://hackersatberkeley.com/" target="_blank">Hackers @ Berkeley</a>
+                </li>
+                <li><a href="https://fst.berkeley.edu/" target="_blank">Food Science and Tech at Cal (FST at Cal)</a>
+                </li>       
+               <li><a href="_blank" target="_blank">Krasa Cosmetics Team</a>
+               </li>        
+                <li><a href="https://bitcoin.berkeley.edu/" target="_blank">Bitcoin Association of Berkeley</a>
+                </li>
+                <li><a href="https://enabletech.berkeley.edu/" target="_blank">EnableTech (ET)</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-12 filterable" cat="outreach">
+            <h3><strong>School, Community and Global Outreach</strong></h3>
+            <ul>
+                <li><a href="http://beam.berkeley.edu/" target="_blank">BEAM: Berkeley Engineers and Mentors</a>
+                </li>
+                <li><a href="http://bptech.berkeley.edu/about" target="_blank">Blueprint</a>
+                </li>
+                <li><a href="https://e4k.berkeley.edu/" target="_blank">Engineering for Kids</a>
+                </li>
+                <li><a href="http://ewb.berkeley.edu/" target="_blank">Engineers Without Borders (EWB)</a>
+                </li>
+                <li><a href="https://pioneers.berkeley.edu/home/" target="_blank">Pioneers in Engineering (PIE)</a>
+                </li>                
+                <li><a href="_blank" target="_blank">Robotics & Engineering for Youth (REY)</a>
+                </li>                
+                <li><a href="https://rab.berkeley.edu/" target="_blank">Robotics@Berkeley (R@B)</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-12 filterable" cat="compete">
+            <h3><strong>Competition/Project Teams</strong></h3>
+            <ul>
+                <li><a href="http://canoe.berkeley.edu/?q=about" target="_blank">Cal Concrete Canoe</a>
+                </li>
+                <li><a href="https://callink.berkeley.edu/organization/constructionteam" target="_blank">Cal Construction</a>
+                </li>
+                <li><a href="https://www.facebook.com/calenvironmental" target="_blank">Cal Environmental Team</a>
+                </li>
+                <li><a href="https://www.facebook.com/CalSeismicDesign" target="_blank">Cal Seismic Design</a>
+                </li>
+                <li><a href="http://www.ocf.berkeley.edu/~calsteel/" target="_blank">Cal Steel Bridge Team</a>
+                </li>
+                <li><a href="http://smv.berkeley.edu/" target="_blank">Super Mileage Vehicle Team (CalSMV)</a>
+                </li>
+                <li><a href="http://www.me.berkeley.edu/calsol/" target="_blank">Solar Vehicle Team (CalSol)</a>
+                </li>
+                <li><a href="http://chemecar.berkeley.edu" target="_blank">ChemE Car</a>
+                </li>
+                <li><a href="http://hpv.berkeley.edu/" target="_blank">Human Powered Vehicle Team</a>
+                </li>
+                <li><a href="http://fsae.berkeley.edu/" target="_blank">Team Cal Simraceway (Formula SAE)</a>
+                </li>
+                 <li><a href="https://asae.berkeley.edu/" target="_blank">Aerospace SAE (ASAE)</a>
+                 </li>
+                 <li><a href="_blank" target="_blank">Autonomous Underwater Vehicles at Berkeley (AUV)</a>
+                 </li>
+                 <li><a href="http://berkeleytechreview.com/" target="_blank">Berkeley Tech Review</a>
+                </li>
+                <li><a href="https://btc.berkeley.edu/" target="_blank">Biofuels Technology Club (BTC)</a>
+                 </li>                
+                 <li><a href="http://hpv.berkeley.edu/#/" target="_blank">Human Powered Vehicle (HPV)</a>
+                 </li>                
+                 <li><a href="_blank" target="_blank">RoboBears (RB)</a>
+                 </li>                 
+                 <li><a href="http://sustainability.berkeley.edu/engage/solar-decathlon" target="_blank">Solar Decathlon at UC Berkeley (SD17)</a>
+                 </li>                 
+                 <li><a href="_blank" target="_blank">Space Technologies and Rocketry (CalSTAR)</a>
+                 </li>                  
+                 <li><a href="https://uav.berkeley.edu/" target="_blank">Unmanned Aerial Vehicles at Berkeley(UAVs @ Berkeley)</a>
+                 </li>                  
+                 <li><a href="https://vr.berkeley.edu/" target="_blank">Virtual Reality at Berkeley (VRB)</a>
+                 </li> 
+            </ul>
+        </div>
+
+        <div class="col-lg-12 filterable" cat="frat">
+            <h3><strong>Fraternities and Sororities</strong></h3>
+            <ul>
+                <li><a href="http://thetatau.berkeley.edu/" target="_blank">Theta Tau (TT)</a>
+                </li>
+                <li><a href="http://www.caltriangle.org/" target="_blank">Triangle Fraternity (Triangle)</a>
+                </li>
+                <li><a href="https://www.facebook.com/calphisigmarho" target="_blank">Phi Sigma Rho (PSR)</a>
+                </li>
+                <li><a href="https://www.ocf.berkeley.edu/~sigma/" target="_blank">Alpha Chi Sigma</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-12 filterable" cat="cult">
+            <h3><strong>Culture and Identity</strong></h3>
+            <ul>
+                <li><a href="http://ucbessa.berkeley.edu/index.php" target="_blank">Black Engineering and Science Student Association (BESSA)</a>
+                </li>
+                <li><a href="http://berkeley.ostem.org/" target="_blank">Out in Science, Technology, Engineering, and Mathematics (oSTEM)</a>
+                </li>
+                <li><a href="http://pasae.berkeley.edu/" target="_blank">Pilipino Association of Scientists, Architects, and Engineers (PASAE)</a>
+                </li>
+                <li><a href="https://www.facebook.com/groups/278636898816436" target="_blank">Society of Asian Scientists and Engineers (SASE)</a>
+                </li>
+                <li><a href="http://swe.berkeley.edu/" target="_blank">Society of Women Engineers (SWE)</a>
+                </li>
+                 <li><a href="https://femtechberkeley.com/" target="_blank">FEM Tech Berkeley</a>
+                </li>               
+            </ul>
+        </div>
+    </div>
+
+<div style="height:50px;"></div>
+
+
+
+
+    <div id="packer">
+        <!--div class="item"> Job </div>
+        <div class="item w2">BOB </div>
+        <div class="item">MARLY</div>
+        <div class="item w3">Goner </div-->
+
+        <!--div class="item">
+            <div class="img-cont">
+                <img class="bounded" src="assets/img/portfolios/American%20Nuclear%20Society.PNG" alt="" />
+                <div class="hover">
+                    <div class='label'> American Nuclear Society </div>
+                </div>
+            </div>
+        </div-->
+
+    </div>
+
+
+</body>
+
+
+<script>
+var container = document.querySelector('#packer');
+// init
+var pckry = new Packery(container, {
+    // options
+    itemSelector: '.item',
+    //gutter: 10
+});
+//The element can be a selector string for a single element.
+/*var pckry = new Packery( '#container', {
+  // options
+});*/
+
+function reload() {
+    var container = document.querySelector('#packer');
+    // init
+    var pckry = new Packery(container, {
+        // options
+        itemSelector: '.item',
+        //gutter: 10
+    });
+}
+
+function addElem(img, label, url, category) {
+    var x = $('#packer');
+    var y = '<div class="item ' + category + '"><div class="img-cont"><img class="bounded" src=' + img + ' alt="" />';
+    y += '<div class="hover"><div class="label"> <a href="' + url + '" target="_blank"> ' + label + '</a></div></div></div></div>';
+    x.append(y);
+    //reload();
+}
+
+/*Categories
+HONORARY -- GPA BASED: TUTORING, MENTORSHIP,
+SOCIETAL --
+CULTURAL --
+COMPETITION -- SKILLS
+
+ */
+function generate2() {
+    $('.list').css('display', 'none');
+    x = document.getElementsByTagName('li');
+    for (var c = 0; c < 15; c++) {
+        addElem("http://placehold.it/350x350", x[c].children[0].innerHTML, x[c].children[0].href);
+    }
+
+    for (var c = 15; c < x.length; c++) {
+        addElem("http://placehold.it/350x350", x[c].children[0].innerHTML, x[c].children[0].href);
+    }
+    reload();
+}
+
+function createClub(name, img, description, url) {}
+
+
+
+var clubs = [
+    "3DMC.jpg",
+    "AIAA.PNG",
+    "aiche%20logo%20bknbkgrnd.jpg",
+    "Alpha%20Nu%20Sigma.PNG",
+    "American%20Nuclear%20Society.PNG",
+    "ASAE.PNG",
+    "ASCE.PNG",
+    "ASME.PNG",
+    "AWE.PNG",
+    "BEAM.PNG",
+    "Berk1337.PNG",
+    "Berkeley%20Innovation.PNG",
+    "Berkeley%20Nano%20Club.PNG",
+    "BESSA.PNG",
+    "BioEHS.PNG",
+    "BMES.PNG",
+    "Cal%20Construction.PNG",
+    "Cal%20Enviro.PNG",
+    "Cal%20ITE.PNG",
+    "Cal%20SMV.PNG",
+    "CalSol.PNG",
+    "Canoe.PNG",
+    "ChemE%20Car.PNG",
+    "Chi%20Epsilon.PNG",
+    "CSUA.PNG",
+    "DEC.PNG",
+    "E4K.PNG",
+    "E98.PNG",
+    "EWB.PNG",
+    "EWH.PNG",
+    "FSAE.PNG",
+    "HackBerkeley.PNG",
+    "Hands-On%20Engineering.PNG",
+    "HES.PNG",
+    "HKN.PNG",
+    "HPV.PNG",
+    "IEEE.PNG",
+    "IIE.PNG",
+    "ISPE.PNG",
+    "JEWSE.PNG",
+    "MSEA.PNG",
+    "oSTEM.PNG",
+    "PASAE.PNG",
+    "PIE.PNG",
+    "PTS.PNG",
+    "RC%20Flyers.PNG",
+    "SASE.PNG",
+    "Seismic%20Design.PNG",
+    "SES%20Berkeley.PNG",
+    "Steel%20Bridge.PNG",
+    "SWE.PNG",
+    "TBP.PNG",
+    "Triangle.PNG",
+    "UCS.PNG",
+    "WISE.PNG"
+]
+
+var values = [
+    'comp',
+    'soc',
+    'ac',
+    'int',
+    'soc',
+    'soc',
+    'soc',
+    'soc',
+    'int',
+    'int',
+    'int',
+    'int',
+    'cult',
+    'ac',
+    'soc'
+];
+
+function getType() {
+    var x = Math.round(4 * Math.random(0, 1));
+    return values[x];
+}
+
+
+function generate() {
+    for (var i = 0; i < clubs.length; i++) {
+        var q = 'assets/img/portfolios/' + clubs[i];
+        addElem(q, i, getType());
+    }
+    reload();
+}
+
+function filter(prop) {
+   // $(".filterable[cat!='" +prop + "']" ).css('display', 'none');
+  // $(".filterable[cat!='" +prop + "']" ).fadeOut( 500, "linear");
+    $(".filterable[cat!='" +prop + "']" ).slideUp(200);
+    $(".filterable[cat~='" +prop + "']" ).css('display', 'inherit');
+     if (prop == undefined) {
+         $(".filterable").fadeIn(600);
+    }
+    /*$('.item').filter(function(index) {
+            return $(this).attr("id") != prop;
+            // return $(this).attr( "id" ) != prop;
+        })
+        .css('display', 'none');
+    //.css( "border", "30px double blue" );*/
+}
+
+function hideElem(el) {
+        /* console.log(el);
+         $(el).style.display = 'none'; */
+    }
+    //generate();
+</script>
+
+<script src="assets/js/bootstrap.js"></script>
+
+</html>

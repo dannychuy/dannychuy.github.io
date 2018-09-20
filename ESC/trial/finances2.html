@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Finances | Engineering Student Council</title>
+    <link rel="icon" href="/assets/img/ESClogo.png" />
+
+    <!-- Stylesheets -->
+    <link href="assets/css/nav.css" rel="stylesheet">
+    <link href="assets/css/finances.css" rel="stylesheet">
+
+    <!-- Javascript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/finances.js"></script>
+</head>
+<body>
+    <!-- Top Bar Script -->
+    <script src="assets/js/top-bar.js"></script>
+
+    <div id="page-wrapper">
+        <br>
+        <br>
+        <div class="card">
+            <div id="title">Finances</div>
+            <br>
+            
+            <div class="card">
+                <!--important question-->
+                <div style="color:#052E6D"><font size="8"><b>
+                    How do I use ESC funds?
+                </font></div><br>
+
+                <font size="4.5"><div style="color:#DE9627"><align= "left">
+                    If your student group received funding from ESC, please read to file a purchase (reimbursement) request for the items purchased:
+                    <br></div></font>
+
+                <div style="color:#020510"><font size="4"><i>NOTE: Funds are not given beforehand; they are reimbursed after purchase.</i>
+                    </b></font></div><br>
+
+                <div align="left">
+                    To fill out a purchase request form, go to ESC's Callink and click on the Finance tab. The Finance tab is visible to your student group's treasurer and/or president if they attended treasurer training at the beginning of the semester, which is required. Fill out the form, make sure to click the correct account (Misc or Programs [ASUCFunds] depending on what you're asking to be reimbursed for). Turn in the form along with the stapled original receipt(s) to the ESS Office front desk in Bechtel. 
+                </div>
+                <br>
+
+                <div align="left">
+                    The ESC Treasurers will take care of the rest and notify you if there's any issues. Make sure to take a picture of the original receipt(s) in case something happens to the receipts. Have the purchase request number noted somewhere to check it's status on Callink under the finance tab. Optional: Email the ESC Treasurers to notify them that you've turned in form(s) to the ESS.
+                </div>
+                <br>
+
+                <div align="left">
+                    More information is on the treasurer training slides that we sent out to those who attended treasurer training. Additionally, the difference between Misc and Programs funds is on those slides. 
+                </div>
+                <br>
+                <button> back </button>
+            </div>
+
+            
+            
+
+            <!--Begin Finances-->
+            <div class="tab-pane" id="fin">
+                <div class="col-lg-4 col-md-6 col-sm-12" style="display: inline-block;">
+                    <script>
+                    function toggle_me(id1, id2, id3, id4, id5) {
+
+                        var e = document.getElementById(id2);
+                        var g = document.getElementById(id3);
+                        var h = document.getElementById(id4);
+                        var i = document.getElementById(id5);
+
+
+                        $(e).parent().toggleClass('hidden');
+                        $(g).parent().toggleClass('hidden');
+                        $(h).parent().toggleClass('hidden');
+                        $(i).parent().toggleClass('hidden');
+
+                        var f = document.getElementById(id1);
+
+                        if ($(f).css('width') == $('#content').css('width')) {
+                            $(f).css('width', 'initial');
+                        } else {
+                            $(f).css('width', $('#content').css('width'));
+                        }
+
+                    }
+                    </script>
+
+
+                    <div id="box11">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSeven" onClick="toggle_me('box11','box22', 'box33','box44','box55')">
+                            <H2>Initial Allocations</H2>
+                        </a>
+
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSeven" onClick="toggle_me('box11','box22', 'box33','box44','box55')">
+                                    <div class="mybb">
+                                        <h8>Fall 2016</h8>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div id="collapseSeven" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <p id="narrow">
+                                        <iframe src="https://docs.google.com/spreadsheets/d/10H_l7c_D_05KmLLqUA0vQuG0owE8oSnWyovSlFlkRrI/edit?pref=2&pli=1#gid=0" width="1000" scrolling="yes" height="950" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+                                    </p>
+                                </div>
+                                <!-- /accordion-inner -->
+                            </div>
+                            <!-- /collapse -->
+                        </div>
+                        <!-- /accordion-group -->
+                    </div>
+                    <!--box-->
+                </div>
+                <!--col-lg-4-->
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12" style="display: inline-block;">
+                    <div id="box22">
+
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseEight" onClick="toggle_me('box22','box11', 'box33','box44','box55')">
+                            <H2>Treasurer Training</H2>
+                        </a>
+
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseEight" onClick="toggle_me('box22','box11', 'box33','box44','box55')">
+                                    <div class="mybb">
+                                        <h8>Spring 2017</h8>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="collapseEight" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <p id="narrow">
+                                        <!--Treasurer Training-->
+                                        <iframe src="https://docs.google.com/presentation/d/1JO0WUmhUf7EKbN3KIAfxhlTR2LqFNGue2g1cfzmR4HU/edit" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+                                    </p>
+                                </div>
+                                <!-- /accordion-inner -->
+                            </div>
+                            <!-- /collapse -->
+                        </div>
+                        <!-- /accordion-group -->
+                    </div>
+                    <!--box-->
+                </div>
+                <!--col-lg-4-->
+
+            <div class="col-lg-4 col-md-6 col-sm-12" style="display: inline-block;">
+                    <div id="box33">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseNine" onClick="toggle_me('box33','box11','box22','box44','box55')">
+                            <H2>Travel Funds Document</H2>
+                        </a>
+
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseNine" onClick="toggle_me('box33','box11','box22','box44','box55')">
+
+                                    <div class="mybb">
+                                        <h8>Spring 2017</h8>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div id="collapseNine" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <p id="narrow">
+                                        <!--Travel Funds Document-->
+                                        <iframe class="spec" src="https://docs.google.com/document/d/1GYu3tSJ9tL8MYKEWACAKuxKMCD-loTKwo2Or_L1PxSk/edit" height="800px" width="1000px" frameborder="0" marginheight="0" marginwidth="0px" overflow="hidden">Loading...</iframe>
+
+                                    </p>
+                                </div>
+                                <!-- /accordion-inner -->
+                            </div>
+                            <!-- /collapse -->
+                        </div>
+                        <!-- /accordion-group -->
+                    </div>
+                    <!--box-->
+                </div>
+                <!--col-lg-4-->
+            <div class="col-lg-4 col-md-6 col-sm-12" style="display: inline-block;">
+                    <div id="box44">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTen" onClick="toggle_me('box44','box11', 'box22','box33','box55')">
+                            <H2>FiComm Funds Request</H2>
+                        </a>
+
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTen" onClick="toggle_me('box44','box11', 'box22','box33','box55')">
+
+                                    <div class="mybb">
+                                        <h8>Spring 2017</h8>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div id="collapseTen" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <p id="narrow">
+                                        <iframe class="spec" src="https://docs.google.com/forms/d/e/1FAIpQLSc2NG_O2xH5P8Z8PQ0svBxctfCd8Tv7PpufWUhhy_o-3UqZcw/viewform?c=0&w=1" height="800px" width="1000px" frameborder="0" marginheight="0" marginwidth="0px" overflow="hidden">Loading...</iframe>
+
+                                    </p>
+                                </div>
+                                <!-- /accordion-inner -->
+                            </div>
+                            <!-- /collapse -->
+                        </div>
+                        <!-- /accordion-group -->
+                    </div>
+                    <!--box-->
+                </div>
+                <!--col-lg-4-->
+
+            <div class="col-lg-4 col-md-6 col-sm-12" style="display: inline-block;">
+                    <div id="box55">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseEleven" onClick="toggle_me('box55','box11', 'box22','box33','box44')">
+                            <H2>FiComm Decisions</H2>
+                        </a>
+
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseEleven" onClick="toggle_me('box55','box11', 'box22','box33','box44')">
+
+                                    <div class="mybb">
+                                        <h8>Spring 2017</h8>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div id="collapseEleven" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <p id="narrow">
+                                        <iframe src="https://docs.google.com/spreadsheets/d/1XvErasdVZASG7yZd5zDSQDa2Q8i1pO1M_eextv9DHrM/edit" width="1050" height="1572" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+                                    </p>
+                                </div>
+                                <!-- /accordion-inner -->
+                            </div>
+                            <!-- /collapse -->
+                        </div>
+                        <!-- /accordion-group -->
+                    </div>
+                    <!--box-->
+                </div>
+                <!--col-lg-4-->
+
+            </div>
+            <!-- End Finances-->
+
+
+
+
+        </div>
+    </div>
+
+    <!-- Bottom Bar Script -->
+    <script src="assets/js/bottom-bar.js"></script>
+    
+</body>
+</html>

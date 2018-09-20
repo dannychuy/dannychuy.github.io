@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clubs | Engineering Student Council</title>
+	<link rel="icon" href="assets/img/ESClogo.png">
+
+	<!-- Stylesheets -->
+    <link href="assets/css/nav.css" rel="stylesheet">
+    <link href="assets/css/clubs2.css" rel="stylesheet">
+
+    <!-- Javascript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="assets/js/clubs2.js"></script>
+
+</head>
+<body>
+	<!-- Top Bar Script -->
+	<script src="assets/js/top-bar.js"></script>
+	<br>
+    <br>
+	
+	<div id="page-wrapper">
+		<div id="search">
+			<div class="title"><strong>Go to...</strong></div>
+	        <br>
+			<!-- Change in Categories should be changed in clubs.js in filterCategory function -->
+			<ul id="categoryUL">
+				<li onclick="filterCategory(0)">Academic and Professional</li>
+	    		<li onclick="filterCategory(1)">Competition/Project Teams</li>
+	    		<li onclick="filterCategory(2)">Culture and Identity</li>
+	    		<li onclick="filterCategory(3)">Design, Make, Hack</li>
+	    		<li onclick="filterCategory(4)">Entrepreneurship/Consulting</li>
+	    		<li onclick="filterCategory(5)">Fraternities and Sororities</li>
+	    		<li onclick="filterCategory(6)">School, Community and Global Outreach</li>
+	    	</ul>
+	        <br>
+		</div>
+		<div class="card">
+			<div id="title">Clubs</div>
+			<br>
+			<div ng-app id="grid">
+				<div ng-controller="Controller">
+					<div ng-repeat="div in divs">
+					    <hr/>{{div}}
+					 </div>
+				</div>
+		        <div class="category">
+		            <div class="title">Academic and Professional</div>
+		            <ul>
+		            	<li><a href="https://tbp.berkeley.edu/" target="_blank"> Tau Beta Pi Engineering Honor Society (TBP)</a></li>
+		                <li><a href="https://hkn.eecs.berkeley.edu/" target="_blank"> Eta Kappa Nu Electrical Engineering Honor Society (HKN)</a></li>
+		                <li><a href="http://apm.ieor.berkeley.edu/" target="_blank">Alpha Pi Mu IEOR Honor Society (APM)</a></li>
+		                <li><a href="http://pts.berkeley.edu/" target="_blank"> Pi Tau Sigma Mechanical Engineering Honor Society (PTS)</a></li>      
+		                <li><a href="https://www.ocf.berkeley.edu/~ch" target="_blank"> Chi Epsilon Civil Engineering Honors Society</a></li>
+		                <li><a href="http://aiaa.berkeley.edu/" target="_blank">American Institute of Aeronautics and Astronautics (AIAA)</a></li>
+		                <li><a href="http://www.cchem.berkeley.edu/aiche" target="_blank">American Institute of Chemical Engineers (AIChE)</a></li>
+		                <li><a href="http://www.nuc.berkeley.edu/ans/" target="_blank">American Nuclear Society (ANS)</a></li>
+		                <li><a href="http://www.calasce.org/" target="_blank">American Society of Civil Engineers (ASCE)</a></li>
+		                <li><a href="http://asme.berkeley.edu/" target="_blank">American Society of Mechanical Engineers (ASME)</a></li>
+		                <li><a href="https://bmes.berkeley.edu/" target="_blank">Biomedical Engineering Society (BMES)</a></li>
+		                <li><a href="https://ieee.berkeley.edu/" target="_blank">Institute of Electrical and Electronics Engineers (IEEE)</a></li>
+		                <li><a href="http://iie.berkeley.edu/" target="_blank">Institute of Industrial Engineers (IIE)</a></li>
+		                <li><a href="http://ispe.berkeley.edu/" target="_blank">International Society for Pharmaceutical Engineering (ISPE)</a></li>
+		                <li><a href="http://berkeleymsea.com/" target="_blank">Materials Science and Engineering Association</a></li>
+		                <li><a href="http://www.ocf.berkeley.edu/~ses/" target="_blank">Society of Engineering Sciences</a></li>
+		                <li><a href="https://msea.berkeley.edu/" target="_blank"> Materials Science and Engineering Association (MSEA)</a></li>
+		            </ul>
+		        </div>
+
+		        <div class="category">
+		            <div class="title">Competition/Project Teams</div>
+		            <ul>
+		                <li><a href="http://canoe.berkeley.edu/?q=about" target="_blank">Cal Concrete Canoe</a></li>
+		                <li><a href="https://callink.berkeley.edu/organization/constructionteam" target="_blank">Cal Construction</a></li>
+		                <li><a href="https://www.facebook.com/calenvironmental" target="_blank">Cal Environmental Team</a></li>
+		                <li><a href="https://www.facebook.com/CalSeismicDesign" target="_blank">Cal Seismic Design</a></li>
+		                <li><a href="http://www.ocf.berkeley.edu/~calsteel/" target="_blank">Cal Steel Bridge Team</a></li>
+		                <li><a href="https://stars.berkeley.edu/" target="_blank">Cal Space Technologies and Rocketry (CalSTAR)</a></li> 
+		                <li><a href="http://smv.berkeley.edu/" target="_blank">Super Mileage Vehicle Team (CalSMV)</a></li>
+		                <li><a href="http://www.me.berkeley.edu/calsol/" target="_blank">Solar Vehicle Team (CalSol)</a></li>
+		                <li><a href="http://chemecar.berkeley.edu" target="_blank">ChemE Car</a></li>
+		                <li><a href="http://hpv.berkeley.edu/" target="_blank">Human Powered Vehicle Team</a></li>
+		                <li><a href="http://fsae.berkeley.edu/" target="_blank">Team Cal Simraceway (Formula SAE)</a></li>
+		                <li><a href="https://asae.berkeley.edu/" target="_blank">Aerospace SAE (ASAE)</a></li>
+		                <li><a href="_blank" target="_blank">Autonomous Underwater Vehicles at Berkeley (AUV)</a></li>
+		                <li><a href="http://berkeleytechreview.com/" target="_blank">Berkeley Tech Review</a></li>
+		                <li><a href="https://btc.berkeley.edu/" target="_blank">Biofuels Technology Club (BTC)</a></li>                
+		                <li><a href="http://hpv.berkeley.edu/#/" target="_blank">Human Powered Vehicle (HPV)</a></li>                
+		                <li><a href="_blank" target="_blank">RoboBears (RB)</a></li>                 
+		                <li><a href="http://sustainability.berkeley.edu/engage/solar-decathlon" target="_blank">Solar Decathlon at UC Berkeley (SD17)</a></li> 
+		                <li><a href="https://uav.berkeley.edu/" target="_blank">Unmanned Aerial Vehicles at Berkeley(UAVs @ Berkeley)</a></li>                  
+		                <li><a href="https://vr.berkeley.edu/" target="_blank">Virtual Reality at Berkeley (VRB)</a></li> 
+		            </ul>
+		        </div>
+
+		        <div class="category">
+		            <div class="title">Culture and Identity</div>
+		            <ul>
+		                <li><a href="http://ucbessa.berkeley.edu/index.php" target="_blank">Black Engineering and Science Student Association (BESSA)</a></li>
+		                <li><a href="http://berkeley.ostem.org/" target="_blank">Out in Science, Technology, Engineering, and Mathematics (oSTEM)</a></li>
+		                <li><a href="http://pasae.berkeley.edu/" target="_blank">Pilipino Association of Scientists, Architects, and Engineers (PASAE)</a></li>
+		                <li><a href="https://www.facebook.com/groups/278636898816436" target="_blank">Society of Asian Scientists and Engineers (SASE)</a></li>
+		                <li><a href="http://swe.berkeley.edu/" target="_blank">Society of Women Engineers (SWE)</a></li>
+		                <li><a href="https://femtechberkeley.com/" target="_blank">FEM Tech Berkeley</a></li>               
+		            </ul>
+		        </div>
+
+		        <div class="category">
+		            <div class="title">Design, Make, Hack</div>
+		            <ul>
+		                <li><a href="https://callink.berkeley.edu/organization/3dmc" target="_blank">3DMC: 3D Modeling Club</a></li>
+		                <li><a href="http://www.ocf.berkeley.edu/~binnov/" target="_blank">Berkeley Innovation</a></li>
+		                <li><a href="http://dec.berkeley.edu/" target="_blank">Design Engineering Collaborative</a></li>
+		                <li><a href="http://eswberkeley.weebly.com" target="_blank">Engineers for a Sustainable World</a></li>
+		                <li><a href="http://hackersatberkeley.com/" target="_blank">Hackers @ Berkeley</a></li>
+		                <li><a href="https://fst.berkeley.edu/" target="_blank">Food Science and Tech at Cal (FST at Cal)</a></li>       
+		            	<li><a href="_blank" target="_blank">Krasa Cosmetics Team</a></li>        
+		                <li><a href="https://bitcoin.berkeley.edu/" target="_blank">Bitcoin Association of Berkeley</a></li>
+		                <li><a href="https://enabletech.berkeley.edu/" target="_blank">EnableTech (ET)</a></li>
+		            </ul>
+		        </div>
+
+		        <div class="category">
+		            <div class="title">Entrepreneurship/Consulting</div>
+		            <ul>
+		                <li><a href="http://www.berkeleyanova.org/" target="_blank">ANova</a></li>
+		                <li><a href="_blank" target="_blank">Chemical Engineering Consulting Group (ChEC)</a></li>             
+		                <li><a href="_blank" target="_blank">Engineering Innovation (EngIn)</a></li>
+		                <li><a href="_blank" target="_blank">Engineering Solutions at Berkeley (ES)</a></li>  
+		                <li><a href="_blank" target="_blank">Phoenix Consulting Group (PCG)</a></li>  
+		            </ul>
+		        </div>
+
+		        <div class="category">
+		            <div class="title">Fraternities and Sororities</div>
+		            <ul>          
+		                
+		                <li><a href="http://thetatau.berkeley.edu/" target="_blank">Theta Tau (TT)</a></li>
+		                <li><a href="http://www.caltriangle.org/" target="_blank">Triangle Fraternity (Triangle)</a></li>
+		                <li><a href="https://www.facebook.com/calphisigmarho" target="_blank">Phi Sigma Rho (PSR)</a></li>
+		                <li><a href="https://www.ocf.berkeley.edu/~sigma/" target="_blank">Alpha Chi Sigma (AXS)</a></li>
+		            </ul>
+		        </div>
+		        
+		        <div class="category">
+		            <div class="title">School, Community and Global Outreach</div>
+		            <ul>
+		                <li><a href="http://beam.berkeley.edu/" target="_blank">BEAM: Berkeley Engineers and Mentors</a></li>
+		                <li><a href="http://bptech.berkeley.edu/about" target="_blank">Blueprint</a></li>
+		                <li><a href="https://e4k.berkeley.edu/" target="_blank">Engineering for Kids</a></li>
+		                <li><a href="http://ewb.berkeley.edu/" target="_blank">Engineers Without Borders (EWB)</a></li>
+		                <li><a href="https://pioneers.berkeley.edu/home/" target="_blank">Pioneers in Engineering (PIE)</a></li>                
+		                <li><a href="_blank" target="_blank">Robotics & Engineering for Youth (REY)</a></li>                
+		                <li><a href="https://rab.berkeley.edu/" target="_blank">Robotics@Berkeley (R@B)</a></li>
+		            </ul>
+		        </div>
+		    </div>
+		</div>
+	    <br>
+	    <br>
+	    <br>
+	    <br>
+	    <br>
+	    <br>
+	    <br>
+	    <br>
+	    <br>
+	    <br>
+    </div>
+    <!-- Bottom Bar Script -->
+    <script src="assets/js/bottom-bar.js"></script>
+</body>
+</html>
