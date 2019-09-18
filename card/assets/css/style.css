@@ -1,0 +1,83 @@
+body {
+	background-color: #F0F0F0;
+	font-family: 'Source Code Pro', monospace;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+
+.stamp-border {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	padding: 8px;
+	transform: rotate(-5deg);
+	background-color: white;
+	box-shadow: 0 0 5px 0 gray;
+}
+
+.filter {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	background-color: gray;
+	opacity: .25;
+}
+
+.stamp {
+	position: initial;
+	height: 100px;
+	width: 100px;
+	overflow: hidden;
+}
+
+.stamp-img {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: auto;
+	width: 100px;
+}
+
+
+.postcard {
+	position: absolute;
+	height: 300px;
+	width: 530px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	padding: 25px;
+	background-color: white;
+	box-shadow: 0 0 5px 0 gray;
+}
+
+
+.header {
+	position: absolute;
+	left: 150px;
+}
+
+.title {
+	font-size: 24px;
+}
+
+.positions {
+	font-size: 14px;
+
+	color: gray;
+}
+
+.description {
+	position: absolute;
+	top: 150px;
+
+	text-align: center;
+}
+
+
+
