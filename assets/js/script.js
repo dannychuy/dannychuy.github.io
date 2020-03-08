@@ -5,10 +5,10 @@ $(document).ready(function() {
 	// const NUM_SECTIONS = SECTIONS.length;
 	const JUMP_HEIGHT = 150;
 	const ROTATE_RANGE = 50;
-	const SCROLL_SPEED = 100;
+	const SCROLL_SPEED = 150;
 	const SCROLL_FREQ = SCROLL_SPEED*Math.PI;
 
-	sections = ["club-card", "61b-card", "hkn-card", "csm-card", "esc-card", "fin-card"];
+	sections = ["club-card", "teach-card", "61b-card", "csm-card", "res-card", "ra-card", "nrhh-card", "comm-card", "hkn-card", "tbp-card", "esc-card", "fin-card"];
 	document.getElementById("main").style.height = (WINDOW_HEIGHT + SCROLL_FREQ*(sections.length - 1) - 16) + "px";
 	console.log(WINDOW_HEIGHT)
 	postcards = document.getElementsByClassName("postcard");
@@ -54,8 +54,3 @@ $(document).ready(function() {
 
 
 });
-
-
-function scrollABit() {
-	$(window).scroll(0, 100);
-}

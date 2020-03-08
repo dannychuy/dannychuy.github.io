@@ -68,6 +68,10 @@ a {
 	z-index: 1;
 }
 
+.headercard {
+	background-color: #C1e8e9;
+}
+
 
 .header {
 	margin: 0 0 50px 130px;
@@ -75,6 +79,14 @@ a {
 
 .title {
 	font-size: 24px;
+}
+
+.middle {
+	margin: 0;
+}
+
+.middle>.title {
+	font-size: 40px;
 }
 
 .positions {
@@ -111,9 +123,6 @@ a {
     font-weight: 400;
     text-align: center;
 }
-
-
-
 
 
 .arrow {
