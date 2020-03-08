@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {
 
 	const DOCUMENT_HEIGHT = $(document).height();
@@ -58,3 +56,6 @@ $(document).ready(function() {
 });
 
 
+function scrollABit() {
+	$(window).scroll(0, 100);
+}
