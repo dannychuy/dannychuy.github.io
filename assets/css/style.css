@@ -8,180 +8,109 @@ a {
 	color: black;
 }
 
-#folder {
+
+.stamp-border {
 	position: absolute;
-	width: 840px;
-	height: 1040px;
-	margin: 5% 0;
-	top: 100%;
-	left: 50%;
-	transform: translateX(-50%);
+	top: 10px;
+	left: 10px;
+	padding: 8px;
+	transform: rotate(-5deg);
+	background-color: white;
+	box-shadow: 0 0 5px 0 gray;
 }
 
-.folder-page {
+.filter {
 	position: absolute;
-	height: 100%;
-	width: 100%;
-
-	background-color: #F5F5DC;
-	box-shadow: 2px 5px 5px #888888;
-	
+	height: 100px;
+	width: 100px;
+	background-color: gray;
+	opacity: .25;
 }
 
-#tab {
-	position: absolute;
-	right: -50px;
-
-	width: 50px;
-	height: 200px;
-
-	border-top-right-radius: 1em;
-	border-bottom-right-radius: 1em;
-
-	background-color: #F5F5DC;
-	box-shadow: 2px 5px 5px -2px #888888;
-
-	writing-mode: vertical-lr;
-	text-align: center;
-	font-size: 1.5em;
-}
-
-
-.paper {
-	position: absolute;
-	width: 800px;
-	height: 1000px;
-	margin: 20px;
-	/*left: 50%;
-	transform: translateX(-50%);*/
-
-	background-color: #FFFFFF;
-	box-shadow: 2px 5px 5px -2px #888888;
-}
-
-
-/*Photo*/
-#little-things {
-	position: absolute;
-	top: 25px;
-	left: 15px;
-	transform: rotate(-3deg);
-	transform-origin: top left; 
-	padding: 25px;
-	background-color: #FFFFFF;
-	box-shadow: -2px 5px 5px #888888;
-	/*cursor: -webkit-grab;*/
-	z-index: 2;
-}
-
-/*#little-things:active {
-	cursor: -webkit-grabbing;
-}*/
-
-#pic-me {
-	height: 200px;
-	width: 200px;
-}
-
-#pic-me img {
-	height: 100%;
-	width: 100%;
-
-	filter: brightness(70%);
-}
-
-#desc-me {
-	text-align: center;
-	font-family: 'Gloria Hallelujah', cursive;
-}
-
-#basic-info {
-	/*position: absolute;
-	top: 50px;
-	left: 300px;*/
-	position: relative;
-	transform: translate(90%, 10%);
-	width: 400px;
-
-	font-size: .75em;
-}
-
-#basic-sub {
-	border-top: 1px solid black;
-	border-left: 1px solid black;
-}
-
-
-
-#report-header {
-	font-size: 3em;
-}
-
-.report-sub {
-	width: 95.75%;
-	padding: 2%;
-	border-bottom: 1px solid black;
-	border-right: 1px solid black;
-}
-
-.sub-header {
-	font-weight: bold;
-	display: inline-block;
-}
-
-
-
-#info {
-	/*position: absolute;*/
-	/*top: 300px;*/
-	margin: 0 10%;
-	width: 80%;
-	line-height: 25px;
-
-	font-size: .8em;
-}
-
-#info-header {
-	font-weight: bold;
-	font-size: 1.5em;
-}
-
-.position {
-	display: inline-block;
-	font-weight: 700;
-}
-
-.organization {
-	position: relative;
-	display: inline-block;
-}
-
-.highlight {
-	position: absolute;
-	top: 0;
-	width: 0%;
-	height: 100%;
-	background-color: yellow;
-	transition: .3s;
+.stamp {
+	position: initial;
+	height: 100px;
+	width: 100px;
 	overflow: hidden;
-	cursor: ;
 }
 
-.organization:hover > .highlight {
-	width: 100%;
-}
-
-.text {
-	z-index: 10;
+.stamp-img {
 	position: absolute;
-	top: 0;
-	white-space: nowrap;
-	text-decoration: underline;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: auto;
+	height: auto;
+	max-width: 100px;
+	max-height: 100px;
 }
 
-*.unselectable {
-   -moz-user-select: -moz-none;
-   -webkit-user-select: none;
-   -ms-user-select: none; /*Introduced in IE 10. See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/*/
-   user-select: none;
+#club-card {
+	background-color: #B8E2F2;
 }
+
+#fin-card {
+	background-color: #F6C8B4;
+}
+
+.postcard {
+	position: fixed;
+	height: 300px;
+	width: 530px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	padding: 25px;
+	background-color: white;
+	box-shadow: 0 0 5px 0 gray;
+
+	z-index: 1;
+}
+
+
+.header {
+	margin: 0 0 50px 130px;
+}
+
+.title {
+	font-size: 24px;
+}
+
+.positions {
+	font-size: 14px;
+
+	color: gray;
+}
+
+.description {
+	font-family: 'Oxygen', sans-serif;
+    color: #676767;
+    line-height: 1.9em;
+    letter-spacing: 1.2px;
+	/*text-align: center;*/
+}
+
+.button {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 4px;
+    border: 1px solid transparent;
+
+	color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+
+
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+

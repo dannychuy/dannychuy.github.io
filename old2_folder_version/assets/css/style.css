@@ -1,0 +1,187 @@
+body {
+	background-color: #F0F0F0;
+	font-family: 'Source Code Pro', monospace;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#folder {
+	position: absolute;
+	width: 840px;
+	height: 1040px;
+	margin: 5% 0;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.folder-page {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+
+	background-color: #F5F5DC;
+	box-shadow: 2px 5px 5px #888888;
+	
+}
+
+#tab {
+	position: absolute;
+	right: -50px;
+
+	width: 50px;
+	height: 200px;
+
+	border-top-right-radius: 1em;
+	border-bottom-right-radius: 1em;
+
+	background-color: #F5F5DC;
+	box-shadow: 2px 5px 5px -2px #888888;
+
+	writing-mode: vertical-lr;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+
+.paper {
+	position: absolute;
+	width: 800px;
+	height: 1000px;
+	margin: 20px;
+	/*left: 50%;
+	transform: translateX(-50%);*/
+
+	background-color: #FFFFFF;
+	box-shadow: 2px 5px 5px -2px #888888;
+}
+
+
+/*Photo*/
+#little-things {
+	position: absolute;
+	top: 25px;
+	left: 15px;
+	transform: rotate(-3deg);
+	transform-origin: top left; 
+	padding: 25px;
+	background-color: #FFFFFF;
+	box-shadow: -2px 5px 5px #888888;
+	/*cursor: -webkit-grab;*/
+	z-index: 2;
+}
+
+/*#little-things:active {
+	cursor: -webkit-grabbing;
+}*/
+
+#pic-me {
+	height: 200px;
+	width: 200px;
+}
+
+#pic-me img {
+	height: 100%;
+	width: 100%;
+
+	filter: brightness(70%);
+}
+
+#desc-me {
+	text-align: center;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+#basic-info {
+	/*position: absolute;
+	top: 50px;
+	left: 300px;*/
+	position: relative;
+	transform: translate(90%, 10%);
+	width: 400px;
+
+	font-size: .75em;
+}
+
+#basic-sub {
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+}
+
+
+
+#report-header {
+	font-size: 3em;
+}
+
+.report-sub {
+	width: 95.75%;
+	padding: 2%;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.sub-header {
+	font-weight: bold;
+	display: inline-block;
+}
+
+
+
+#info {
+	/*position: absolute;*/
+	/*top: 300px;*/
+	margin: 0 10%;
+	width: 80%;
+	line-height: 25px;
+
+	font-size: .8em;
+}
+
+#info-header {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.position {
+	display: inline-block;
+	font-weight: 700;
+}
+
+.organization {
+	position: relative;
+	display: inline-block;
+}
+
+.highlight {
+	position: absolute;
+	top: 0;
+	width: 0%;
+	height: 100%;
+	background-color: yellow;
+	transition: .3s;
+	overflow: hidden;
+	cursor: ;
+}
+
+.organization:hover > .highlight {
+	width: 100%;
+}
+
+.text {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	white-space: nowrap;
+	text-decoration: underline;
+}
+
+*.unselectable {
+   -moz-user-select: -moz-none;
+   -webkit-user-select: none;
+   -ms-user-select: none; /*Introduced in IE 10. See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/*/
+   user-select: none;
+}
