@@ -26,6 +26,8 @@
 
 </head>
 <body>
+
+			
 	<div id="partial-circles">
 		<div id="top-partial-circle"></div>
 		<div id="bottom-partial-circle">
@@ -33,195 +35,201 @@
 		</div>
 	</div>
 	<div id="folder">
-		<div class="folder-page"></div>
-		<div class="tab" id="yearbook"> <a href="https://dannychuy.github.io/yearbook">Yearbook</a> </div>
-		<div class="tab" id="about"> About </div>
+		<div id="folder-page"></div>
+		<div class="tab" id="yearbook" onclick="mountModule('yearbook_module', 'lightblue', '540px')">Postcards</div>
+		<div class="tab" id="about" onclick="mountModule('about_module', '#F5F5DC', '1040px')">About</div>
 
-		<div id="little-things">
-			<div id="pic-me">
-				<img src="assets/img/danny.jpg">
+		<div id="about_module" class="mounted_module">
+			<div id="little-things">
+				<div id="pic-me">
+					<img src="assets/img/danny.jpg">
+				</div>
+				<div id="desc-me" unselectable="on" class="unselectable">
+					<div>Spotted: looking suave </div>
+				</div>
 			</div>
-			<div id="desc-me" unselectable="on" class="unselectable">
-				<div>Spotted: looking suave </div>
-			</div>
-		</div>
 
-		<div class="paper" id="report">
-			<div id="basic-info">
-				<div id="report-header">Danny Chu </div>
-				<br>
-				<div id="basic-sub">
-					Hello! I'm Danny. I've just graduated from UC Berkeley, studying. the wonderful intricacies of <a href="https://eecs.berkeley.edu/" target="_blank"><span class="organization">Electrical Engineering and Computer Science.<div class="highlight"></div></span></a>
-					And will continue my adventure as an incoming 
-					<a href="https://data.berkeley.edu/" target="_blank"><span class="organization">Data Science.<div class="highlight"></div></span></a>
-					master's student at Berkeley. My hobbies include helping the community, traveling, and finding ways to cook a potato.
-				</div>
-			</div>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<div id="info">
-				<div id="info-header">Things I'm Doing: </div>
-				<br>
-				<div class="card">
-					- <div class="position">President</div> for 
-						<a href="https://hkn.eecs.berkeley.edu/" target="_blank">
-							<div class="organization"> 
-								Eta Kappa Nu (HKN)
-								<div class="highlight">
-									<div class="text">Eta Kappa Nu (HKN)</div>
-								</div> 
-							</div>
-						</a>
+			<div class="paper" id="report">
+				<div id="basic-info">
+					<div id="report-header">Danny Chu </div>
 					<br>
+					<div id="basic-sub">
+						Hello! I'm Danny. I've just graduated from UC Berkeley, studying. the wonderful intricacies of <a href="https://eecs.berkeley.edu/" target="_blank"><span class="organization">Electrical Engineering and Computer Science.<div class="highlight"></div></span></a>
+						And will continue my adventure as an incoming 
+						<a href="https://data.berkeley.edu/" target="_blank"><span class="organization">Data Science.<div class="highlight"></div></span></a>
+						master's student at Berkeley. My hobbies include helping the community, traveling, and finding ways to cook a potato.
+					</div>
 				</div>
-				<div class="card">
-					- <div class="position">Historian</div> for 
-						<a href="https://tbp.berkeley.edu/" target="_blank">
-							<div class="organization">
-								Tau Beta Pi (TBP)
-								<div class="highlight">
-									<div class="text">Tau Beta Pi (TBP)</div>
-								</div> 	
-							</div>
-						</a>
-					<br>
-				</div>
-				<div class="card">
-					- <div class="position">Advisor</div> for 
-						<a href="https://csmberkeley.github.io/" target="_blank">
-							<div class="organization">
-								Computer Science Mentors (CSM)
-								<div class="highlight">
-									<div class="text">Computer Science Mentors (CSM) </div>
-								</div> 
-							</div>
-						</a>
-					<br>
-				</div>
-			</div>
-			<br>
-			<br>
-			<div id="info">
-				<div id="info-header">Things I've Done: </div>
 				<br>
-				<div class="card">
-						- <div class="position">Teaching Assistant (TA) </div> for 
-							<a href="https://inst.eecs.berkeley.edu/~cs61b/sp18/" target="_blank">
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<div id="info">
+					<div id="info-header">Things I'm Doing: </div>
+					<br>
+					<div class="card">
+						- <div class="position">President</div> for 
+							<a href="https://hkn.eecs.berkeley.edu/" target="_blank">
 								<div class="organization"> 
-									Data Structures and Algorithms (CS61B)
+									Eta Kappa Nu (HKN)
 									<div class="highlight">
-										<div class="text">Data Structures and Algorithms (CS61B)</div>
-									</div>
+										<div class="text">Eta Kappa Nu (HKN)</div>
+									</div> 
 								</div>
 							</a>
 						<br>
+					</div>
+					<div class="card">
+						- <div class="position">Historian</div> for 
+							<a href="https://tbp.berkeley.edu/" target="_blank">
+								<div class="organization">
+									Tau Beta Pi (TBP)
+									<div class="highlight">
+										<div class="text">Tau Beta Pi (TBP)</div>
+									</div> 	
+								</div>
+							</a>
+						<br>
+					</div>
+					<div class="card">
+						- <div class="position">Advisor</div> for 
+							<a href="https://csmberkeley.github.io/" target="_blank">
+								<div class="organization">
+									Computer Science Mentors (CSM)
+									<div class="highlight">
+										<div class="text">Computer Science Mentors (CSM) </div>
+									</div> 
+								</div>
+							</a>
+						<br>
+					</div>
 				</div>
-				<div class="card">
-					- <div class="position">Teaching Assistant (TA)</div> for 
-						<a href="https://hkn.mu/decal" target="_blank">
-							<div class="organization"> 
-								Going Down the EECS Stack (EECS 98)
-								<div class="highlight">
-									<div class="text">Going Down the EECS Stack (EECS 98)</div>
-								</div> 
-							</div>
-						</a>
+				<br>
+				<br>
+				<div id="info">
+					<div id="info-header">Things I've Done: </div>
 					<br>
-				</div>
-				<div class="card">
-					- <div class="position">Resident Assistant (RA) </div> for the 
-						<a href="http://reslife.berkeley.edu/staff/quick-reference-key-staff-roles" target="_blank">
+					<div class="card">
+							- <div class="position">Teaching Assistant (TA) </div> for 
+								<a href="https://inst.eecs.berkeley.edu/~cs61b/sp18/" target="_blank">
+									<div class="organization"> 
+										Data Structures and Algorithms (CS61B)
+										<div class="highlight">
+											<div class="text">Data Structures and Algorithms (CS61B)</div>
+										</div>
+									</div>
+								</a>
+							<br>
+					</div>
+					<div class="card">
+						- <div class="position">Teaching Assistant (TA)</div> for 
+							<a href="https://hkn.mu/decal" target="_blank">
+								<div class="organization"> 
+									Going Down the EECS Stack (EECS 98)
+									<div class="highlight">
+										<div class="text">Going Down the EECS Stack (EECS 98)</div>
+									</div> 
+								</div>
+							</a>
+						<br>
+					</div>
+					<div class="card">
+						- <div class="position">Resident Assistant (RA) </div> for the 
+							<a href="http://reslife.berkeley.edu/staff/quick-reference-key-staff-roles" target="_blank">
+								<div class="organization">
+									Residence Halls (Unit 2)
+									<div class="highlight">
+										<div class="text">Residence Halls (Unit 2) </div>
+									</div> 
+								</div>
+							</a>
+						<br>
+					</div>
+					<div class="card">
+						- <div class="position">Vice President (VP) | Professional Development Chair </div> for 
+							<a href="https://tbp.berkeley.edu/" target="_blank">
+								<div class="organization">
+									Tau Beta Pi (TBP)
+									<div class="highlight">
+										<div class="text">Tau Beta Pi (TBP) </div>
+									</div> 	
+								</div>
+							</a>
+						<br>
+					</div>
+					
+					<div class="card">
+						- <div class="position">Pledgemaster (PM) | Corresponding Secretary </div> for 
+							<a href="https://hkn.mu/" target="_blank">
+								<div class="organization"> 
+									Eta Kappa Nu (HKN)
+									<div class="highlight">
+										<div class="text">Eta Kappa Nu (HKN)</div>
+									</div> 
+								</div>
+							</a>
+						<br>
+					</div>
+					<div class="card">
+						- <div class="position">Vice President, External (VP) | Advisor | Technology Director </div> for the 
+							<a href="https://esc.berkeley.edu/" target="_blank">
+								<div class="organization">
+									Engineering Student Council (ESC)
+									<div class="highlight">
+										<div class="text">Engineering Student Council (ESC) </div>
+									</div> 
+								</div>
+							</a>
+						<br>
+					</div>
+					<div class="card">
+						- <div class="position">Vice President, Philanthropy (VP) | Recognitions Officer </div> for the 
+							<a href="http://reslife.berkeley.edu/opportunities/nrhh" target="_blank">
+								<div class="organization">
+									National Res. Hall Honorary (NRHH)
+									<div class="highlight">
+										<div class="text">National Res. Hall Honorary (NRHH) </div>
+									</div> 
+								</div>
+							</a>
+						<br>
+					</div>
+					<div class="card">
+					- <div class="position">Vice President, External (VP) | Coordinator, CS61B | Senior Mentor (SM)</div> for
+						<a href="https://csmberkeley.github.io/" target="_blank">
 							<div class="organization">
-								Residence Halls (Unit 2)
+							Computer Science Mentors (CSM)
 								<div class="highlight">
-									<div class="text">Residence Halls (Unit 2) </div>
-								</div> 
+									<div class="text">Computer Science Mentors (CSM) </div>
+								</div>
 							</div>
 						</a>
-					<br>
-				</div>
-				<div class="card">
-					- <div class="position">Vice President (VP) | Professional Development Chair </div> for 
-						<a href="https://tbp.berkeley.edu/" target="_blank">
-							<div class="organization">
-								Tau Beta Pi (TBP)
-								<div class="highlight">
-									<div class="text">Tau Beta Pi (TBP) </div>
-								</div> 	
-							</div>
-						</a>
-					<br>
-				</div>
-				
-				<div class="card">
-					- <div class="position">Pledgemaster (PM) | Corresponding Secretary </div> for 
-						<a href="https://hkn.mu/" target="_blank">
-							<div class="organization"> 
-								Eta Kappa Nu (HKN)
-								<div class="highlight">
-									<div class="text">Eta Kappa Nu (HKN)</div>
-								</div> 
-							</div>
-						</a>
-					<br>
-				</div>
-				<div class="card">
-					- <div class="position">Vice President, External (VP) | Advisor | Technology Director </div> for the 
-						<a href="https://esc.berkeley.edu/" target="_blank">
-							<div class="organization">
-								Engineering Student Council (ESC)
-								<div class="highlight">
-									<div class="text">Engineering Student Council (ESC) </div>
-								</div> 
-							</div>
-						</a>
-					<br>
-				</div>
-				<div class="card">
-					- <div class="position">Vice President, Philanthropy (VP) | Recognitions Officer </div> for the 
-						<a href="http://reslife.berkeley.edu/opportunities/nrhh" target="_blank">
-							<div class="organization">
-								National Res. Hall Honorary (NRHH)
-								<div class="highlight">
-									<div class="text">National Res. Hall Honorary (NRHH) </div>
-								</div> 
-							</div>
-						</a>
-					<br>
-				</div>
-				<div class="card">
-				- <div class="position">Vice President, External (VP) | Coordinator, CS61B | Senior Mentor (SM)</div> for
-					<a href="https://csmberkeley.github.io/" target="_blank">
-						<div class="organization">
-						Computer Science Mentors (CSM)
-							<div class="highlight">
-								<div class="text">Computer Science Mentors (CSM) </div>
-							</div>
-						</div>
-					</a>
-					<br>
-				</div>
+						<br>
+					</div>
 
-				<div class="card">
-					- <div class="position">Technology and Media Chair </div> for 
-						<a href="https://calrbc2018.github.io/" target="_blank">
-							<div class="organization">
-								PACHURH's Regional Business Conference (RBC)
-								<div class="highlight">
-									<div class="text">PACHURH's Regional Business Conference (RBC) </div>
-								</div> 
-							</div>
-						</a>
-					<br>
+					<div class="card">
+						- <div class="position">Technology and Media Chair </div> for 
+							<a href="https://calrbc2018.github.io/" target="_blank">
+								<div class="organization">
+									PACHURH's Regional Business Conference (RBC)
+									<div class="highlight">
+										<div class="text">PACHURH's Regional Business Conference (RBC) </div>
+									</div> 
+								</div>
+							</a>
+						<br>
+					</div>
 				</div>
 			</div>
 		</div>
 
-		
+		<div id="yearbook_module" class="unmounted_module">
+			<div class="cards">
+				<iframe src="https://dannychuy.github.io/yearbook" height="500px" width="700px"></iframe>
+			</div>
+		</div>
 		<!-- <div class="folder-page" id="folder-front"></div> -->
 	</div>
 </body>

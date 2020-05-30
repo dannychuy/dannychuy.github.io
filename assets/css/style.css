@@ -8,6 +8,17 @@ a {
 	color: black;
 }
 
+.mounted_module {
+	z-index: 10;
+	display: initial;
+}
+
+.unmounted_module {
+	opacity: 0;
+	z-index: -1;
+	display: none;
+}
+
 #folder {
 	position: absolute;
 	width: 840px;
@@ -18,7 +29,7 @@ a {
 	transform: translateX(-50%);
 }
 
-.folder-page {
+#folder-page {
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -187,4 +198,11 @@ a {
    -webkit-user-select: none;
    -ms-user-select: none; /*Introduced in IE 10. See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/*/
    user-select: none;
+}
+
+.cards {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -100%);
 }
