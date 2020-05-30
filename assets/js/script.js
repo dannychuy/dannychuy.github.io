@@ -49,8 +49,5 @@ $(document).ready(function() {
 		} else {
 			card.style.zIndex = 2;
 		}
-
 	})
-
-
 });

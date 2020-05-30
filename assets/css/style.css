@@ -55,8 +55,8 @@ a {
 
 .postcard {
 	position: fixed;
-	height: 300px;
-	width: 530px;
+	height: 350px;
+	width: 570px;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -91,7 +91,6 @@ a {
 
 .positions {
 	font-size: 14px;
-
 	color: gray;
 }
 
