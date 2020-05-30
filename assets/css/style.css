@@ -109,36 +109,19 @@ a {
 	top: 50px;
 	left: 300px;*/
 	position: relative;
-	transform: translate(90%, 10%);
-	width: 400px;
-
+	transform: translate(75%, 10%);
+    width: 425px;
 	font-size: .75em;
 }
-
-#basic-sub {
-	border-top: 1px solid black;
-	border-left: 1px solid black;
-}
-
-
 
 #report-header {
 	font-size: 3em;
 }
 
-.report-sub {
-	width: 95.75%;
-	padding: 2%;
-	border-bottom: 1px solid black;
-	border-right: 1px solid black;
+#basic-sub {
+	line-height: 1.6em;
+	font-size: 1.1em;
 }
-
-.sub-header {
-	font-weight: bold;
-	display: inline-block;
-}
-
-
 
 #info {
 	/*position: absolute;*/
@@ -160,9 +143,20 @@ a {
 	font-weight: 700;
 }
 
+.card {
+	border-radius: 5px;
+	padding: 5px;
+	transition: max-height 1s, color 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+	box-shadow: 3px 3px 30px 3px rgba(0, 0, 0, 0.2);
+}
+
 .organization {
 	position: relative;
 	display: inline-block;
+	z-index: 5;
 }
 
 .highlight {
@@ -173,7 +167,7 @@ a {
 	background-color: yellow;
 	transition: .3s;
 	overflow: hidden;
-	cursor: ;
+	z-index: -1;
 }
 
 .organization:hover > .highlight {

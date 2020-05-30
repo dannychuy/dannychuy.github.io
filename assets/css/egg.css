@@ -1,5 +1,6 @@
 #folder {
-	animation: up 0.5s ease-out 2.5s 1 forwards;
+	animation: up 0.5s ease-out 0.5s 1 forwards;
+    /*2.5s*/
 }
 
 #folder-front {
