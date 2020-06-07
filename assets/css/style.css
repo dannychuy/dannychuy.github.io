@@ -22,7 +22,7 @@ a {
 #folder {
 	position: absolute;
 	width: 840px;
-	height: 1040px;
+	height: 1240px;
 	margin: 5% 0;
 	top: 100%;
 	left: 50%;
@@ -70,7 +70,7 @@ a {
 .paper {
 	position: absolute;
 	width: 800px;
-	height: 1000px;
+	height: 1200px;
 	margin: 20px;
 	/*left: 50%;
 	transform: translateX(-50%);*/
@@ -205,4 +205,15 @@ a {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -100%);
+}
+
+.st1:hover, .st2:hover, .st3:hover, .st4:hover, .st5:hover, .st6:hover, .st7:hover, .st8:hover, .st9:hover {
+	-webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+	filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+	/*opacity: 0;*/
+}
+
+.shadow {
+	-webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+	filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));	
 }
