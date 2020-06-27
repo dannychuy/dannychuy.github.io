@@ -9,6 +9,7 @@ a {
 }
 
 .mounted_module {
+	position: relative;
 	z-index: 10;
 	display: initial;
 }
@@ -201,10 +202,16 @@ a {
 }
 
 .cards {
+	position: relative;
+	height: 540px;
+	width: 840px;
+}
+
+.yrbk {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -100%);
+	transform: translate(-50%, -50%);
 }
 
 .st1:hover, .st2:hover, .st3:hover, .st4:hover, .st5:hover, .st6:hover, .st7:hover, .st8:hover, .st9:hover {
