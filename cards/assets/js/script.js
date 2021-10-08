@@ -2,27 +2,26 @@ $(document).ready(function() {
 
 	const DOCUMENT_HEIGHT = $(document).height();
 	const WINDOW_HEIGHT = $(window).height();
-	// const NUM_SECTIONS = SECTIONS.length;
 	const JUMP_HEIGHT = 150;
 	const ROTATE_RANGE = 50;
 	const SCROLL_SPEED = 150;
 	const SCROLL_FREQ = SCROLL_SPEED*Math.PI;
 
-	sections = ["club-card", "teach-card", "61b-card", "csm-card", "res-card", "ra-card", "nrhh-card", "comm-card", "hkn-card", "tbp-card", "esc-card", "fin-card"];
-	document.getElementById("main").style.height = (WINDOW_HEIGHT + SCROLL_FREQ*(sections.length - 1) - 16) + "px";
-	console.log(WINDOW_HEIGHT)
-	postcards = document.getElementsByClassName("postcard");
+	postcards = [].slice.call(document.getElementsByClassName("postcard")).reverse();
+	document.getElementById("main").style.height = (WINDOW_HEIGHT + SCROLL_FREQ*(postcards.length - 1) - 16) + "px";
+	
+	// console.log(postcards);
 
 
 	index = 0;
 	next_index = index+1;
-	card = document.getElementById(sections[index]);
-	queued_card = document.getElementById(sections[next_index]);
+	card = postcards[index];
+	queued_card = postcards[next_index];
 
 
 
 	$(window).scroll(function() {
-		next_index =  Math.floor($(window).scrollTop()/SCROLL_FREQ) % sections.length;
+		next_index =  Math.floor($(window).scrollTop()/SCROLL_FREQ) % postcards.length;
 
 		// Find new card
 		if (next_index != index) {
@@ -34,10 +33,10 @@ $(document).ready(function() {
 				element.style.zIndex = 0;
 			}
 
-			card = document.getElementById(sections[next_index]);
+			card = postcards[next_index]; 
 			card.style.zIndex = 2;
 
-			queued_card = document.getElementById(sections[(next_index+1) % sections.length]);
+			queued_card = postcards[(next_index+1) % postcards.length];
 			queued_card.style.zIndex = 1;
 		}
 		card.style.transform = "translate(-50%, -" + (50 + Math.abs(JUMP_HEIGHT*Math.sin($(window).scrollTop()/SCROLL_SPEED))) + "%) " +
@@ -49,5 +48,24 @@ $(document).ready(function() {
 		} else {
 			card.style.zIndex = 2;
 		}
-	})
+	});
+
+	window.onkeydown = function(e) { 
+		if (e.keyCode == 32) {
+			e.preventDefault();
+			window.scrollTo({ 
+				top: Math.ceil(($(window).scrollTop()+1)/SCROLL_FREQ) * SCROLL_FREQ,
+				left: 0, 
+				behavior: 'smooth' 
+			});
+		}
+	};
+
 });
+
+
+
+
+
+
+
